@@ -1,0 +1,16 @@
+userid:string:0:0:0
+accesstoken:string:0:0:0
+formid:string:0:0:0
+lastsubmittime:magpitimestamp:0:0:0
+endrecordtime:magpitimestamp:0:0:0
+startrecordtime:magpitimestamp:0:0:0
+version:string:0:0:0
+uuid:magpiuuid:0:0:0
+latitude:float:-90:90:0
+longitude:float:-200:200:0
+prompt__1359549345113:information:0:0:0
+score_one:string:0:0:0
+score_two:string:0:0:0
+score_three:string:0:0:0
+prompt__1359549443639:information:0:0:0
+Radio:enum:0:0:0:1,2,3
