@@ -1,0 +1,13 @@
+userid:string:0:0:0
+accesstoken:string:0:0:0
+formid:string:0:0:0
+lastsubmittime:magpitimestamp:0:0:0
+endrecordtime:magpitimestamp:0:0:0
+startrecordtime:magpitimestamp:0:0:0
+version:string:0:0:0
+uuid:magpiuuid:0:0:0
+latitude:float:-90:90:0
+longitude:float:-200:200:0
+What_is_your_favorite_number:integer:0:999:0
+foods:subform:0:0:0
+Type_something:string:0:0:0

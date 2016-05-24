@@ -1,0 +1,88 @@
+userid:string:0:0:0
+accesstoken:string:0:0:0
+formid:string:0:0:0
+lastsubmittime:magpitimestamp:0:0:0
+endrecordtime:magpitimestamp:0:0:0
+startrecordtime:magpitimestamp:0:0:0
+version:string:0:0:0
+uuid:magpiuuid:0:0:0
+latitude:float:-90:90:0
+longitude:float:-200:200:0
+KENYA_MANAGEMENT_SURVEY_JANUA:information:0:0:0
+interviewer:string:0:0:0
+clusterid:integer:1:30:0
+hhid:integer:1:15:0
+gps:geopoint:0:0:0
+interview_start_time:integer:0:2400:0
+name_hhhead:string:0:0:0
+num_km_to_facility:integer:0:999:0
+min_to_health_facility:integer:0:999:0
+BEDNET_questions_follow_next:information:0:0:0
+totalpersons_lastnight:integer:0:999:0
+totalpersons_usual:integer:0:999:0
+numhhsleepingspaces_ln:integer:0:999:0
+numhhsleepingspaces_usual:integer:0:999:0
+nets_numberinhh:integer:0:999:0
+net_holes_notrepaired_other:string:0:0:0
+HOUSEHOLD_WEALTH_questions_fo:information:0:0:0
+water_howlong:integer:0:999:0
+wlth_toilet_numotherhholds:integer:0:999:0
+wlth_hectaresownland:integer:0:999:0
+wlth_numcattle:integer:0:999:0
+wlth_milkcowsbulls:integer:0:999:0
+wlth_horsesdonkeysmules:integer:0:999:0
+wlth_goats:integer:0:999:0
+wlth_sheep:integer:0:999:0
+wlth_chickens:integer:0:999:0
+Prompt1356176371311:information:0:0:0
+Prompt1358572577517:information:0:0:0
+Prompt1358622580042:information:0:0:0
+fevero5_last2weeks_num:integer:5:1004:0
+fevero5_bloodtaken_num:integer:0:999:0
+This_portion_of_the_interview:information:0:0:0
+hhinterviewed_yn:enum:0:0:0:yes,no
+consent:enum:0:0:0:yes,no
+head_hh_school_yn:enum:0:0:0:yes,no,do not know
+head_hh_educ_highest:enum:0:0:0:Primary,Secondary,Higher,Do not know
+nets_yn:enum:0:0:0:yes,no
+net_holes_ever_yn:enum:0:0:0:yes,no
+net_holes_cause:multi:0:0:0:Tore when got caught on edge or nail,Was pulled and tore on corner,Was burned by a candle or sparks,Was caused by rats or mice,In another way,Do not know
+net_holes_repaired_yn:enum:0:0:0:yes,no
+net_holes_repair_method:multi:0:0:0:Stitched,Knotted or tied,Used a patch,In another way
+net_holes_notrepaired_reason:enum:0:0:0:No time for this,It is not necessary,Don’t know how,Other
+net_holes_messages_yn:enum:0:0:0:yes,no
+net_holes_messages_where:multi:0:0:0:Radio,Community volunteer,Health worker,Community leader,Church or mosque,Family or fried,Poster,Other
+visithomemalaria:enum:0:0:0:Yes,No,Do not know
+itn_netinfosource:enum:0:0:0:Radio,Health centre staff,Community-based volunteer,Community leader,Neighbor,Relative,Television,Other,No information
+wlth_hhwater:enum:0:0:0:Piped into dwelling,Piped into yard or plot,Piped public tap or standpipe,Tube well or borehole,Dug well protected,Dug well unprotected,Rainwater,Tanker truck,Cart with small tank,Surface water lake pond etc,Bottled water,Other
+water_wheresource:enum:0:0:0:in own dwelling,in own yard or plot,elsewhere
+water_whofetches:enum:0:0:0:adult woman,adult man,female child less 15 yo,male child less 15 yo,other
+water_safedrink_yn:enum:0:0:0:yes,no,do not know
+water_makesafe:multi:0:0:0:boil,bleach_chlorine,strain thru cloth,use water filter,solar disinfection,let stand and settle,other,do not know
+water_chlorine_type:enum:0:0:0:aqua tab,WaterGuard,PuR,other
+wlth_hhtoilet:enum:0:0:0:FLUSH or POUR FLUSH to piped sewer,FLUSH or POUR FLUSH to septic tank,FLUSH or POUR FLUSH to pit latrine,FLUSH or POUR FLUSH to somewhere else,FLUSH do not where,PIT ventilated improved,PIT with slab,PIT without slab or open pit,COMPOSTING toilet,BUCKET toilet,HANGING toilet or latrine,NO TOILET bush or field,OTHER
+toilet_share:enum:0:0:0:yes,no
+wlth_hhcook:enum:0:0:0:Electricity,LPG,Natural gas,Biogas,Kerosene,Coal lignite,Charcoal,Wood,Straw shrub grass,Agricultural crop,Animal dung,No food cooked in household,Other
+wlth_hhfloor:enum:0:0:0:Earth or sand,Dung,Wood planks,Palm or bamboo,Parquet or polished wood,Vinyl or asphalt strips,Ceramic tiles,Cement,Carpet,Other
+wlth_roof:enum:0:0:0:NATURAL no roof,NATURAL thatch or palm leaf,NATURAL sod,RUDIMENTARY rustic mat,RUDIMENTARY palm or bamboo,RUDIMENTARY wood planks,RUDIMENTARY cardboard,FINISHED metal,FINISHED wood,FINISHED calamine or cement fiber,FINISHED ceramic tiles,FINISHED cement,FINISHED roofing shingles,OTHER
+wlth_extwalls:enum:0:0:0:NATURAL no walls,NATURAL cane palm or trunks,NATURAL dirt,RUDIMENTARY bamboo with mud,RUDIMENTARY stone with mud,RUDIMENTARY uncovered adobe,RUDIMENTARY plywood,RUDIMENTARY cardboard,RUDIMENTARY reused wood,FINISHED cement,FINISHED stone with lime or cement,FINISHED bricks,FINISHED cement blocks,FINISHED covered adobe,FINISHED wood planks or shingles,OTHER
+wlth_elect:enum:0:0:0:Yes,No
+wlth_radio:enum:0:0:0:Yes,No
+wlth_tv:enum:0:0:0:Yes,No
+wlth_mobphone:enum:0:0:0:Yes,No
+wlth_nonmobphone:enum:0:0:0:Yes,No
+wlth_refridg:enum:0:0:0:Yes,No
+wlth_watch:enum:0:0:0:Yes,No
+wlth_bicycle:enum:0:0:0:Yes,No
+wlth_motocyc:enum:0:0:0:Yes,No
+wlth_animaldrawncart:enum:0:0:0:Yes,No
+wlth_car:enum:0:0:0:Yes,No
+wlth_boat_motor:enum:0:0:0:Yes,No
+wlth_hhagland:enum:0:0:0:Yes,No
+wlth_ownfarmanimals:enum:0:0:0:Yes,No
+wlth_bankaccount:enum:0:0:0:Yes,No
+handwash_observe_yn:enum:0:0:0:1,2,3,4
+handwash_station:enum:0:0:0:yes,no
+handwash_water_present:enum:0:0:0:1,2
+handwash_cleaning_agent:enum:0:0:0:SOAP OR DETERGENT,ASH-MUD-SAND,NONE
+chw_presence_yn:enum:0:0:0:yes,no
