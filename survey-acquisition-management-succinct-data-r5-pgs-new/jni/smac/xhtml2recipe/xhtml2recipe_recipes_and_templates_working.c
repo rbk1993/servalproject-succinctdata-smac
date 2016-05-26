@@ -109,10 +109,10 @@ char *implied_meta_fields_template =
 
 char *implied_meta_fields_template_subform =
 "<formid>$formid$</formid>\n"
-"<question>$question$</question>\n";
+"<question>$question</question>\n";
 
 char *implied_data_fields_template_subform =
-"<uuid>$uuid$</uuid>\n";
+"<uuid>$uuid</uuid>\n";
 
 char *strgrow(char *in, char *new)
 {

@@ -6,17 +6,18 @@
 /*
   Re-constitute a form to XML (or other format) by reading a template of the output
   format and substituting the values in.
-
-  Update 26.05.2016 : Stripped2xml supports forms with subforms (But only 1 level of subforms!)
 */
 int stripped2xml(char *stripped,int stripped_len,char *template,int template_len,char *xml,int xml_size)
 {
   int xml_ofs=0;
   int state=0;
-  int i,j,k;
 
+  int subform_depth=0;
+
+  int current_subform_record_id=0;
   int state_in_subform_record=0;
 
+  int current_subform_instance_id=0;
   int state_in_subform_instance=0;
 
   int record_count[1024];
@@ -28,10 +29,13 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
 	  record_count[m]=0;
   }
 
+  int i,j,k;
+
   char *fieldnames[1024];
   char *values[1024];
   int  in_subform_record[1024];
   int  record_number_field[1024];
+
   int field_count=0;
   
   char field[1024];
@@ -40,60 +44,64 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
   char value[1024];
   int value_len=0;
   
-  char tag[1024];
-  int tag_len=0;
+  char other[1024];
+  int other_len=0;
 
   // Read fields from stripped.
 
+  /*
+   * Original algorithm :
+   *
+   * LOOP (Not end of file)
+   * 	READ CHARACTER
+   *	IF STATE==0 : FIELD+=CHARACTER; ENDIF
+   *	IF CHARACTER== '=' STATE=1
+   *	IF STATE==1 : VALUE+=CHARACTER; ENDIF
+   */
   for(i=0;i<stripped_len;i++) {
+
     if (stripped[i]=='='&&(state==0)) {
       state=1;
-    } else if(stripped[i]=='{') { //Found an opening bracket
+    }
+    //For the moment, managing only 1 depth of subforms (no subforms within subforms allowed)
+    else if(stripped[i]=='{') {
 
     	printf("Found opening bracket ! \n");
 
-    	//{Opening bracket} X {We are not already in a subform} => beginning of subform
     	if (state_in_subform_instance ==0) {
     		state_in_subform_instance=1;
     	}
-    	//{Opening bracket} X {We are already in a subform} => beginning of subform record
     	else {
-    		//Count the number of records in this form
     		record_count[record_number]++;
     		state_in_subform_record=1;
     	}
-    } else if(stripped[i]=='}') { //Found an opening bracket
+    }
+    else if(stripped[i]=='}') {
 
     printf("Found closing bracket ! \n");
 
-        //{Closing bracket} X {We are already in a subform record} => end of subform record
 		if (state_in_subform_record==1) {
 			state_in_subform_record=0;
 		}
-		//{Closing bracket} X {We are not already in a subform record} => end of subform
 		else {
 			state_in_subform_instance=0;
 			record_number++;
 		}
-    } else if (stripped[i]<' ') {
+    }
+    else if (stripped[i]<' ') {
       if (state==1) {
 	// record field=value pair
 	field[field_len]=0;
 	value[value_len]=0;
 	fieldnames[field_count]=strdup(field);
 	values[field_count]=strdup(value);
-
-	//record if the value pair is a part of a subform record
 	in_subform_record[field_count]=state_in_subform_record;
-	//record the number of records in this subform record
 	record_number_field[field_count]=record_number;
-
 	printf("---\n@@@ fieldname = %s \n",fieldnames[field_count]);
 	printf("@@@ value = %s \n",values[field_count]);
 	printf("@@@ part of subform record ? = %d \n",in_subform_record[field_count]);
 	printf("@@@ subform record temporary number = %d \n",record_number);
 	printf("@@@ Record count = %d \n --- \n",record_count[record_number]);
-
 	field_count++;
       }
       state=0;
@@ -108,120 +116,58 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
 
   // Read template, substituting $FIELD$ with the value of the field.
   // $$ substitutes to a single $ character.
-  int state_field=0;
-  int state_tag=0;
-  field_len=0;
-  state_in_subform_record=0;
-  state_in_subform_instance=0;
-  int beginning_index_of_subform_record = 0;
-  int remaining_records = 0;
-  int number_of_records_written = 0;
-
-  printf(" About to read template ... \n");
-
+  state=0; field_len=0;
   for(i=0;i<template_len;i++) {
-
-	 if (template[i]=='<') {
-		 //we are going into a tag
-		state_tag=1;
-		//Write the '<' symbol in the XML
-		xml[xml_ofs++]=template[i];
-	 }
-
-	 else if (template[i]=='>') {
-	  	//we are going out from a tag
-		 tag[tag_len]=0; tag_len=0;
-		 //Write the '>' symbol in the XML
-		 xml[xml_ofs++]=template[i];
-
-		 //The tag is a subform tag
-		 if(!strncasecmp("dd:subform",tag,strlen("dd:subform"))){
-			 printf("Found a subform tag ! \n");
-			 state_in_subform_instance=1;
-		 }
-
-		 //The tag is a subform end tag
-		 else if ((!strncasecmp("dd:subform",&tag[1],strlen("dd:subform")))
-		  	      &&tag[0]=='/') {
-			printf("Found a subform END tag ! \n");
-		  	state_in_subform_instance=0;
-		  	state_in_subform_record=0;
-		  	number_of_records_written=0;
-		  	beginning_index_of_subform_record=0;
-		  }
-
-		 //The tag is a data tag in a subform => Beginning of a record
-		 else if (!strncasecmp("data",tag,strlen("data")) && state_in_subform_instance == 1){
-
-			 printf("Found a data tag within a subform ! \n");
-			 state_in_subform_record=1;
-			 remaining_records = 1;
-			 //Store the position of the record beginning for further records
-			 beginning_index_of_subform_record=i-strlen("data")-3;
-
-		 }
-
-		 //The tag is a data end tag in a subform => End of a record
-		 else if ((!strncasecmp("data",&tag[1],strlen("data")) && state_in_subform_instance == 1)
-		  	      && tag[0]=='/') {
-			 printf("Found a data END tag within a subform ! \n");
-		  	 if(remaining_records == 1) {
-				 number_of_records_written++;
-		  		 //Go back in the template file to the beginning of a record
-		  		 i=beginning_index_of_subform_record;
-		  	 } else {
-			  	 state_in_subform_record=0;
-		  	 }
-		  }
-		state_tag=0;
-	 }
-
-	 else if (template[i]=='$') {
-      if (state_field==1) {
+//	if (template[i]=='<') {
+//	}
+//	if (template[i]=='>') {
+//		other[other_len]=0; field_len=0;
+//		printf("hhhhhhhh \n");
+//	}
+    if (template[i]=='$') {
+      if (state==1) {
 	// end of variable
 	field[field_len]=0; field_len=0;
 	for(j=0;j<field_count;j++)
+	{
+//	  //printf("====> fieldnames %d = %s \n",j,fieldnames[j]);
+//	  //printf("====> field %d = %s \n",j,field);
+//	  printf("====> other %d = %s \n",j,other);
 	  if (!strcasecmp(field,fieldnames[j])) {
-		printf(" Found matching field ! Fieldname = %s \n ",fieldnames[j]);
 	    // write out field value
+//		if(in_subform_record[j]&&record_count[record_number_field[j]]>0){
+//			//i=index_beginning_record;
+//			 printf("!!!!!!!!!!!! Let's restart a record ! \n");
+//		}
 	    for(k=0;values[j][k];k++) {
 	      xml[xml_ofs++]=values[j][k];
-	      if (xml_ofs==xml_size) return -1;
+	      if (xml_ofs==xml_size+100000) return -1;
 	    }
-		if(in_subform_record[j] == 1){
-			//If we have written the total number of records, no more records to write.
-			if((record_count[record_number_field[j]] - number_of_records_written) == 1) {
-				remaining_records = 0;
-			}
-			//Empty the fieldname because we already wrote it in the XML
-			//Thus, the strcasecmp between field and fieldnames[j] will find the other record fieldnames
-			fieldnames[j]="";
-		}
+	      printf("### values = %s \n",values[j]);
 	    break;
 	  }
-	state_field=0;
-      } else {
-	// start of variable stubstitution
-	state_field=1;
-      }
-    }
-	  else {
+	}
 
-      if (state_field==1) {
-    	  // accumulate field name
-    	  if (field_len<1023) {
-    		  field[field_len++]=template[i];
-    		  field[field_len]=0;
-    	  }
+	state=0;
       } else {
-    	  // natural character
-    	  xml[xml_ofs++]=template[i];
-    	  // accumulate tag name
-    	  if(state_tag==1 && tag_len<1023) {
-    		  tag[tag_len++]=template[i];
-    		  tag[tag_len]=0;
-    	  }
-    	  if (xml_ofs==xml_size) return -1;
+	// start of variable substitution
+	state=1;
+      }
+    } else {
+      if (state==1) {
+	// accumulate field name
+	if (field_len<1023) {
+	  field[field_len++]=template[i];
+	  field[field_len]=0;
+	}
+      } else {
+	// natural character
+	xml[xml_ofs++]=template[i];
+//	if(other_len<1023) {
+//		other[other_len++]=template[i];
+//		other[other_len]=0;
+//	}
+	if (xml_ofs==xml_size+100000) return -1;
       }
     }
   }

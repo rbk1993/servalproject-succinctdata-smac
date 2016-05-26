@@ -19,12 +19,11 @@
 <dd:subform xmlns:dd="http://datadyne.org/javarosa"> 
 <meta> 
 <formid>$formid$</formid>
-<question>$question</question>
+<question>$question$</question>
 </meta> 
 <data> 
-<uuid>$uuid</uuid>
+<uuid>$uuid$</uuid>
 <What_is_a_food_that_you_do_not>$What_is_a_food_that_you_do_not$</What_is_a_food_that_you_do_not>
-</foods>
 </data> 
 </dd:subform> 
 <Type_something>$Type_something$</Type_something>
