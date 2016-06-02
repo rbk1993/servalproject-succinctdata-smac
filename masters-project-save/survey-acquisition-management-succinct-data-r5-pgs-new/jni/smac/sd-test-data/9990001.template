@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<meta>
+<userid>$userid$</userid>
+<accesstoken>$accesstoken$</accesstoken>
+<formid>$formid$</formid>
+<lastsubmittime>$lastsubmittime$</lastsubmittime>
+<endrecordtime>$endrecordtime$</endrecordtime>
+<startrecordtime>$startrecordtime$</startrecordtime>
+<version>$version$</version>
+<uuid>$uuid$</uuid>
+<geotag>
+  <longitude>$longitude$</longitude>
+  <latitude>$latitude$</latitude>
+</geotag>
+</meta>
+<data>
+<Type_your_name>$Type_your_name$</Type_your_name>
+</data>
+</form>

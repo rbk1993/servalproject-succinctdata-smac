@@ -1,0 +1,19 @@
+<form>
+   <meta>
+      <password>abcdef</password>
+      <email>reda.benkirane@hotmail.fr</email>
+      <formid>9990001</formid>
+      <lastsubmittime>2016-06-02 14:36:38</lastsubmittime>
+      <endrecordtime>2016-06-02 14:35:40</endrecordtime>
+      <startrecordtime>2016-06-02 14:35:36</startrecordtime>
+      <version>2.5</version>
+      <uuid>9aa34bbb8065107-1464843936205</uuid>
+      <geotag>
+         <longitude>138.5716036</longitude>
+         <latitude>-35.0081515</latitude>
+      </geotag>
+   </meta>
+   <data>
+      <Type_your_name>Reda</Type_your_name>
+   </data>
+</form>

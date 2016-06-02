@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<meta>
+<userid>$userid$</userid>
+<accesstoken>$accesstoken$</accesstoken>
+<formid>$formid$</formid>
+<lastsubmittime>$lastsubmittime$</lastsubmittime>
+<endrecordtime>$endrecordtime$</endrecordtime>
+<startrecordtime>$startrecordtime$</startrecordtime>
+<version>$version$</version>
+<uuid>$uuid$</uuid>
+<geotag>
+  <longitude>$longitude$</longitude>
+  <latitude>$latitude$</latitude>
+</geotag>
+</meta>
+<data>
+<What_is_your_favorite_number>$What_is_your_favorite_number$<dd:subform xmlns:dd="http://datadyne.org/javarosa"> 
+<meta> 
+<formid>$formid$</formid>
+<question>$question$</question>
+</meta> 
+<data> 
+<uuid>$uuid$</uuid>
+<What_is_a_food_that_you_do_not>$What_is_a_food_that_you_do_not$</foods>
+</data> 
+</dd:subform> 
+<Type_something>$Type_something$</data>
+</form>

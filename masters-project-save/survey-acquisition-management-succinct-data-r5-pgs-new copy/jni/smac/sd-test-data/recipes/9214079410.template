@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<meta>
+<userid>$userid$</userid>
+<accesstoken>$accesstoken$</accesstoken>
+<formid>$formid$</formid>
+<lastsubmittime>$lastsubmittime$</lastsubmittime>
+<endrecordtime>$endrecordtime$</endrecordtime>
+<startrecordtime>$startrecordtime$</startrecordtime>
+<version>$version$</version>
+<uuid>$uuid$</uuid>
+<geotag>
+  <longitude>$longitude$</longitude>
+  <latitude>$latitude$</latitude>
+</geotag>
+</meta>
+<data>
+<prompt__1426421240266>$prompt__1426421240266$</prompt__1426421240266>
+<Surveyor>$Surveyor$</Surveyor>
+<Village>$Village$</Village>
+<Type>$Type$</Type>
+<GPS>$GPS$</GPS>
+<Etat>$Etat$</Etat>
+<Photo>$Photo$</Photo>
+<Date_reparation>$Date_reparation$</Date_reparation>
+<Comite_deja>$Comite_deja$</Comite_deja>
+<Comite_Y_N>$Comite_Y_N$</Comite_Y_N>
+<Coti_Y_N>$Coti_Y_N$</Coti_Y_N>
+<prompt__1426422785953>$prompt__1426422785953$</prompt__1426422785953>
+</data>
+</form>

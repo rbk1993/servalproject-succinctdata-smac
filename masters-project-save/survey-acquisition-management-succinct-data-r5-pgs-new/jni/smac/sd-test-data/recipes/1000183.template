@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<meta>
+<userid>$userid$</userid>
+<accesstoken>$accesstoken$</accesstoken>
+<formid>$formid$</formid>
+<lastsubmittime>$lastsubmittime$</lastsubmittime>
+<endrecordtime>$endrecordtime$</endrecordtime>
+<startrecordtime>$startrecordtime$</startrecordtime>
+<version>$version$</version>
+<uuid>$uuid$</uuid>
+<geotag>
+  <longitude>$longitude$</longitude>
+  <latitude>$latitude$</latitude>
+</geotag>
+</meta>
+<data>
+<Text>$Text$</Text>
+<integer>$integer$</integer>
+<Decimal>$Decimal$</Decimal>
+<Dropdown>$Dropdown$</Dropdown>
+<radio_button>$radio_button$</radio_button>
+<checkbox>$checkbox$</checkbox>
+<date>$date$</date>
+<Gps_question>$Gps_question$</Gps_question>
+</data>
+</form>

@@ -1,0 +1,26 @@
+A list of some commands to run tests ...
+
+XHTML -> RECIPE
+
+../smac recipe xhcreate tests/smac-recipe-xhcreate/subform_test_01.xhtml
+
+XML -> STRIPPED
+
+../smac recipe strip tests/smac-recipe-strip/subform_test_01.xml file_stripped_test.stripped
+
+STRIPPED -> XML
+
+../smac recipe rexml tests/smac-recipe-rexml/stripped_subform.stripped tests/smac-recipe-rexml/whole_9214104911.template file_rexmld_test.xml
+
+STRIPPED -> SD
+
+Form without subforms: 
+../smac recipe compress recipes stripped/1.stripped file_compressed_test.sd
+
+Form with subforms:
+
+SD -> STRIPPED
+
+Forms without subforms:
+../smac recipe decompress recipes sd/1.sd folder_decompress_test
+

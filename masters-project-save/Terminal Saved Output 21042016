@@ -1,0 +1,3206 @@
+servals-MacBook-Pro-2:Downloads serval$ ls
+12953187_10205157923742457_1081669150_o.jpg	LibreOffice_5.1.2_MacOS_x86-64.dmg		android-sdk-macosx
+DraftReport_Q3_P1_SWOT.docx			Proposal Seminars.pdf				android-sdk_r24.4.1-macosx.zip
+Eclipse.app					Skype_7.25.356.dmg				eclipse-jee-mars-2-macosx-cocoa-x86_64.tar
+servals-MacBook-Pro-2:Downloads serval$ Eclipse.app
+-bash: Eclipse.app: command not found
+servals-MacBook-Pro-2:Downloads serval$ ./Eclipse.app/
+-bash: ./Eclipse.app/: is a directory
+servals-MacBook-Pro-2:Downloads serval$ mv android-sdk-macosx/ ../Install/
+servals-MacBook-Pro-2:Downloads serval$ cd ../Install/
+servals-MacBook-Pro-2:Install serval$ ls
+android-sdk-macosx
+servals-MacBook-Pro-2:Install serval$ cd ../Downloads/
+servals-MacBook-Pro-2:Downloads serval$ ls
+12953187_10205157923742457_1081669150_o.jpg	LibreOffice_5.1.2_MacOS_x86-64.dmg		android-sdk_r24.4.1-macosx.zip
+DraftReport_Q3_P1_SWOT.docx			Proposal Seminars.pdf				eclipse-jee-mars-2-macosx-cocoa-x86_64.tar
+Eclipse.app					Skype_7.25.356.dmg
+servals-MacBook-Pro-2:Downloads serval$ ls
+12953187_10205157923742457_1081669150_o.jpg	Skype_7.25.356.dmg				httpcomponents-client-4.5.2
+DraftReport_Q3_P1_SWOT.docx			android-ndk-r11c				httpcomponents-client-4.5.2-bin.tar.gz
+Eclipse.app					android-ndk-r11c-darwin-x86_64.zip		httpcomponents-core-4.4.4
+LibreOffice_5.1.2_MacOS_x86-64.dmg		android-sdk_r24.4.1-macosx.zip			httpcomponents-core-4.4.4-bin.tar.gz
+Proposal Seminars.pdf				eclipse-jee-mars-2-macosx-cocoa-x86_64.tar	jdk-7u79-macosx-x64.dmg
+servals-MacBook-Pro-2:Downloads serval$ mv android-ndk-r11c ../Install/
+servals-MacBook-Pro-2:Downloads serval$ pwd
+/Users/serval/Downloads
+servals-MacBook-Pro-2:Downloads serval$ ls
+12953187_10205157923742457_1081669150_o.jpg	Skype_7.25.356.dmg				httpcomponents-client-4.5.2-bin.tar.gz
+DraftReport_Q3_P1_SWOT.docx			android-ndk-r11c-darwin-x86_64.zip		httpcomponents-core-4.4.4
+Eclipse.app					android-sdk_r24.4.1-macosx.zip			httpcomponents-core-4.4.4-bin.tar.gz
+LibreOffice_5.1.2_MacOS_x86-64.dmg		eclipse-jee-mars-2-macosx-cocoa-x86_64.tar	jdk-7u79-macosx-x64.dmg
+Proposal Seminars.pdf				httpcomponents-client-4.5.2
+servals-MacBook-Pro-2:Downloads serval$ cd ../Install/
+servals-MacBook-Pro-2:Install serval$ ls
+android-ndk-r11c	android-sdk-macosx
+servals-MacBook-Pro-2:Install serval$ pwd android-sdk-macosx/
+/Users/serval/Install
+servals-MacBook-Pro-2:Install serval$ ls
+android-ndk-r11c	android-sdk-macosx
+servals-MacBook-Pro-2:Install serval$ cd ../\
+> cc
+-bash: cd: ../cc: No such file or directory
+servals-MacBook-Pro-2:Install serval$ cd ..
+servals-MacBook-Pro-2:~ serval$ ls
+Applications	Desktop		Documents	Downloads	Install		Library		Movies		Music		Pictures	Public		android-sdks
+servals-MacBook-Pro-2:~ serval$ cd Downloads/
+servals-MacBook-Pro-2:Downloads serval$ ls
+12953187_10205157923742457_1081669150_o.jpg		android-ndk-r11c-darwin-x86_64.zip			httpcomponents-core-4.4.4-bin.tar.gz
+DraftReport_Q3_P1_SWOT.docx				android-sdk_r24.4.1-macosx.zip				jdk-7u79-macosx-x64.dmg
+Eclipse.app						eclipse-jee-mars-2-macosx-cocoa-x86_64.tar		survey-acquisition-management-succinct-data-r5-pgs
+LibreOffice_5.1.2_MacOS_x86-64.dmg			httpcomponents-client-4.5.2				survey-acquisition-management-succinct-data-r5-pgs.zip
+Proposal Seminars.pdf					httpcomponents-client-4.5.2-bin.tar.gz
+Skype_7.25.356.dmg					httpcomponents-core-4.4.4
+servals-MacBook-Pro-2:Downloads serval$ cd survey-acquisition-management-succinct-data-r5-pgs
+servals-MacBook-Pro-2:survey-acquisition-management-succinct-data-r5-pgs serval$ ls
+AndroidManifest.xml		bin				ic_launcher-web.png		project.properties		src
+README.md			build.xml			jni				res				updateversion
+SUPPLEMENTAL_LICENSE.TXT	build_before.sh			libs				retainversion
+assets				gen				proguard-project.txt		sam.iml
+servals-MacBook-Pro-2:survey-acquisition-management-succinct-data-r5-pgs serval$ cd jni/
+servals-MacBook-Pro-2:jni serval$ ls
+Android.mk	smac
+servals-MacBook-Pro-2:jni serval$ cd smac
+servals-MacBook-Pro-2:smac serval$ ls
+COPYING				dexml.c				latin1tab.h			packed_stats.h			xhtml2recipe.c
+IJCSS-169.txt			entropyutil.c			length.c			packedascii.c			xml2recipe.c
+LIBEXPAT-NOTICE			expat.h				lowercasealpha.c		recipe.c			xmlparse.c
+Makefile			expat_external.h		main.c				recipe.h			xmlrole.c
+README				explore_parameters		map.c				results				xmlrole.h
+arithmetic.c			extract_instance.c		md5.c				sd-test-data			xmltok.c
+arithmetic.h			extract_instance_with_library.c	md5.h				smac.c				xmltok.h
+ascii.h				extract_tweet_text		nacl				smac.h				xmltok_impl.c
+asciitab.h			extract_tweets.c		nametab.h			timegm.c			xmltok_impl.h
+case.c				gen_stats.c			nonalpha.c			unicode.c			xmltok_ns.c
+charset.c			gsinterpolative.c		nzrc.recipe			unicode.h
+charset.h			iasciitab.h			nzrc.test			utf8tab.h
+comp_report			internal.h			odt-shell			visualise.c
+crypto.c			jni.c				packed_stats.c			visualise.h
+servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+servals-MacBook-Pro-2:sd-test-data serval$ ls -l
+total 16
+-rw-r--r--   1 serval  staff  871 21 Apr 16:37 compare
+drwxr-xr-x  11 serval  staff  374 21 Apr 16:37 forms
+-rw-r--r--   1 serval  staff  751 21 Apr 16:37 makerecipe
+drwxr-xr-x  11 serval  staff  374 21 Apr 16:37 records
+servals-MacBook-Pro-2:sd-test-data serval$ less compare 
+servals-MacBook-Pro-2:sd-test-data serval$ ls -l
+total 16
+-rw-r--r--   1 serval  staff  871 21 Apr 16:37 compare
+drwxr-xr-x  11 serval  staff  374 21 Apr 16:37 forms
+-rw-r--r--   1 serval  staff  751 21 Apr 16:37 makerecipe
+drwxr-xr-x  11 serval  staff  374 21 Apr 16:37 records
+servals-MacBook-Pro-2:sd-test-data serval$ less makerecipe 
+servals-MacBook-Pro-2:sd-test-data serval$ ls
+compare		forms		makerecipe	records
+servals-MacBook-Pro-2:sd-test-data serval$ cd ..
+servals-MacBook-Pro-2:smac serval$ ls
+COPYING				dexml.c				latin1tab.h			packed_stats.h			xhtml2recipe.c
+IJCSS-169.txt			entropyutil.c			length.c			packedascii.c			xml2recipe.c
+LIBEXPAT-NOTICE			expat.h				lowercasealpha.c		recipe.c			xmlparse.c
+Makefile			expat_external.h		main.c				recipe.h			xmlrole.c
+README				explore_parameters		map.c				results				xmlrole.h
+arithmetic.c			extract_instance.c		md5.c				sd-test-data			xmltok.c
+arithmetic.h			extract_instance_with_library.c	md5.h				smac.c				xmltok.h
+ascii.h				extract_tweet_text		nacl				smac.h				xmltok_impl.c
+asciitab.h			extract_tweets.c		nametab.h			timegm.c			xmltok_impl.h
+case.c				gen_stats.c			nonalpha.c			unicode.c			xmltok_ns.c
+charset.c			gsinterpolative.c		nzrc.recipe			unicode.h
+charset.h			iasciitab.h			nzrc.test			utf8tab.h
+comp_report			internal.h			odt-shell			visualise.c
+crypto.c			jni.c				packed_stats.c			visualise.h
+servals-MacBook-Pro-2:smac serval$ make
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c main.c -o main.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c smac.c -o smac.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c recipe.c -o recipe.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xml2recipe.c -o xml2recipe.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xhtml2recipe.c -o xhtml2recipe.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c map.c -o map.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c dexml.c -o dexml.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c md5.c -o md5.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c unicode.c -o unicode.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c case.c -o case.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c length.c -o length.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c lowercasealpha.c -o lowercasealpha.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nonalpha.c -o nonalpha.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packedascii.c -o packedascii.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packed_stats.c -o packed_stats.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c charset.c -o charset.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c entropyutil.c -o entropyutil.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c arithmetic.c -o arithmetic.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c gsinterpolative.c -o gsinterpolative.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c visualise.c -o visualise.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c crypto.c -o crypto.o
+crypto.c:108:5: warning: implicit declaration of function 'crypto_box_public_from_private' is invalid in C99 [-Wimplicit-function-declaration]
+    crypto_box_public_from_private(pk, sk);
+    ^
+crypto.c:275:7: warning: unused variable 'frag_number' [-Wunused-variable]
+  int frag_number=0;
+      ^
+2 warnings generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_core_hsalsa20_ref/core.c -o nacl/src/crypto_core_hsalsa20_ref/core.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_scalarmult_curve25519_ref/base.c -o nacl/src/crypto_scalarmult_curve25519_ref/base.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_scalarmult_curve25519_ref/smult.c -o nacl/src/crypto_scalarmult_curve25519_ref/smult.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.c -o nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_onetimeauth_poly1305_ref/auth.c -o nacl/src/crypto_onetimeauth_poly1305_ref/auth.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_onetimeauth_poly1305_ref/verify.c -o nacl/src/crypto_onetimeauth_poly1305_ref/verify.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_verify_16_ref/verify.c -o nacl/src/crypto_verify_16_ref/verify.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_xsalsa20_ref/xor.c -o nacl/src/crypto_stream_xsalsa20_ref/xor.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_xsalsa20_ref/stream.c -o nacl/src/crypto_stream_xsalsa20_ref/stream.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_core_salsa20_ref/core.c -o nacl/src/crypto_core_salsa20_ref/core.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/xor.c -o nacl/src/crypto_stream_salsa20_ref/xor.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/stream.c -o nacl/src/crypto_stream_salsa20_ref/stream.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmlparse.c -o xmlparse.o
+xmlparse.c:1568:18: warning: implicit conversion from enumeration type 'enum XML_Status' to different enumeration type 'enum XML_Error' [-Wenum-conversion]
+        result = XML_STATUS_SUSPENDED;
+               ~ ^~~~~~~~~~~~~~~~~~~~
+./expat.h:51:30: note: expanded from macro 'XML_STATUS_SUSPENDED'
+#define XML_STATUS_SUSPENDED XML_STATUS_SUSPENDED
+                             ^~~~~~~~~~~~~~~~~~~~
+xmlparse.c:1578:18: warning: implicit conversion from enumeration type 'enum XML_Status' to different enumeration type 'enum XML_Error' [-Wenum-conversion]
+        result = XML_STATUS_OK;
+               ~ ^~~~~~~~~~~~~
+./expat.h:49:23: note: expanded from macro 'XML_STATUS_OK'
+#define XML_STATUS_OK XML_STATUS_OK
+                      ^~~~~~~~~~~~~
+xmlparse.c:1608:12: warning: implicit conversion from enumeration type 'enum XML_Error' to different enumeration type 'enum XML_Status' [-Wenum-conversion]
+    return result;
+    ~~~~~~ ^~~~~~
+3 warnings generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmlrole.c -o xmlrole.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok_impl.c -o xmltok_impl.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok_ns.c -o xmltok_ns.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok.c -o xmltok.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c timegm.c -o timegm.o
+gcc -g -Wall -o smac main.o smac.o recipe.o xml2recipe.o xhtml2recipe.o map.o dexml.o md5.o unicode.o case.o length.o lowercasealpha.o nonalpha.o packedascii.o packed_stats.o charset.o entropyutil.o arithmetic.o gsinterpolative.o visualise.o crypto.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.o nacl/src/crypto_core_hsalsa20_ref/core.o nacl/src/crypto_scalarmult_curve25519_ref/base.o nacl/src/crypto_scalarmult_curve25519_ref/smult.o nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.o nacl/src/crypto_onetimeauth_poly1305_ref/auth.o nacl/src/crypto_onetimeauth_poly1305_ref/verify.o nacl/src/crypto_verify_16_ref/verify.o nacl/src/crypto_stream_xsalsa20_ref/xor.o nacl/src/crypto_stream_xsalsa20_ref/stream.o nacl/src/crypto_core_salsa20_ref/core.o nacl/src/crypto_stream_salsa20_ref/xor.o nacl/src/crypto_stream_salsa20_ref/stream.o xmlparse.o xmlrole.o xmltok_impl.o xmltok_ns.o xmltok.o timegm.o -lm
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1 -DTESTMODE -o arithmetic arithmetic.c
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c gen_stats.c -o gen_stats.o
+gen_stats.c:720:8: warning: unused variable 'codePage' [-Wunused-variable]
+  int *codePage=getUnicodeStatistics(h,0x0400/0x80);
+       ^
+1 warning generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1 -o gen_stats gen_stats.o arithmetic.o packed_stats.o gsinterpolative.o charset.o unicode.o
+servals-MacBook-Pro-2:smac serval$ ./smac
+smac usage:
+  smac recipe <recipe sub-command>
+  smac babble
+  smac test <files>
+servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+servals-MacBook-Pro-2:sd-test-data serval$ ls
+compare		forms		makerecipe	records
+servals-MacBook-Pro-2:sd-test-data serval$ ls -la 
+total 16
+drwxr-xr-x    6 serval  staff   204 21 Apr 16:37 .
+drwxr-xr-x@ 100 serval  staff  3400 21 Apr 16:54 ..
+-rw-r--r--    1 serval  staff   871 21 Apr 16:37 compare
+drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 forms
+-rw-r--r--    1 serval  staff   751 21 Apr 16:37 makerecipe
+drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 records
+servals-MacBook-Pro-2:sd-test-data serval$ chmod 755 makerecipe 
+servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+rm: No match.
+cp: ../stats.dat: No such file or directory
+../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/AllQuestions_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+Segmentation fault
+../forms/nz_redcross_1a_people.xml
+Segmentation fault
+../forms/nz_redcross_1b_family_needs.xml
+Segmentation fault
+sd: No such file or directory.
+servals-MacBook-Pro-2:sd-test-data serval$ cd ..
+servals-MacBook-Pro-2:smac serval$ ls
+COPYING				dexml.c				length.c			packed_stats.o			visualise.o
+IJCSS-169.txt			dexml.o				length.o			packedascii.c			xhtml2recipe.c
+LIBEXPAT-NOTICE			entropyutil.c			lowercasealpha.c		packedascii.o			xhtml2recipe.o
+Makefile			entropyutil.o			lowercasealpha.o		recipe.c			xml2recipe.c
+README				expat.h				main.c				recipe.h			xml2recipe.o
+arithmetic			expat_external.h		main.o				recipe.o			xmlparse.c
+arithmetic.c			explore_parameters		map.c				results				xmlparse.o
+arithmetic.dSYM			extract_instance.c		map.o				sd-test-data			xmlrole.c
+arithmetic.h			extract_instance_with_library.c	md5.c				smac				xmlrole.h
+arithmetic.o			extract_tweet_text		md5.h				smac.c				xmlrole.o
+ascii.h				extract_tweets.c		md5.o				smac.h				xmltok.c
+asciitab.h			gen_stats			nacl				smac.o				xmltok.h
+case.c				gen_stats.c			nametab.h			timegm.c			xmltok.o
+case.o				gen_stats.o			nonalpha.c			timegm.o			xmltok_impl.c
+charset.c			gsinterpolative.c		nonalpha.o			unicode.c			xmltok_impl.h
+charset.h			gsinterpolative.o		nzrc.recipe			unicode.h			xmltok_impl.o
+charset.o			iasciitab.h			nzrc.test			unicode.o			xmltok_ns.c
+comp_report			internal.h			odt-shell			utf8tab.h			xmltok_ns.o
+crypto.c			jni.c				packed_stats.c			visualise.c
+crypto.o			latin1tab.h			packed_stats.h			visualise.h
+servals-MacBook-Pro-2:smac serval$ find .. -name stats.dat
+servals-MacBook-Pro-2:smac serval$ find ../.. -name stats.dat
+servals-MacBook-Pro-2:smac serval$ pwd
+/Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac
+servals-MacBook-Pro-2:smac serval$ ls ../../assets/
+smac		smac.dat
+servals-MacBook-Pro-2:smac serval$ cp ../../assets/smac.dat  stats.dat
+servals-MacBook-Pro-2:smac serval$ ./makerecipe 
+-bash: ./makerecipe: No such file or directory
+servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+rm: No match.
+cp: ../stats.dat: No such file or directory
+../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/AllQuestions_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+Segmentation fault
+../forms/nz_redcross_1a_people.xml
+Segmentation fault
+../forms/nz_redcross_1b_family_needs.xml
+Segmentation fault
+sd: No such file or directory.
+servals-MacBook-Pro-2:sd-test-data serval$ pwd
+/Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac/sd-test-data
+servals-MacBook-Pro-2:sd-test-data serval$ ls -la ../stats.dat
+-rwxr-xr-x@ 1 serval  staff  1789018 21 Apr 16:56 ../stats.dat
+servals-MacBook-Pro-2:sd-test-data serval$ mv ../stats.dat .
+servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+rm: No match.
+../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field counties:select1
+Parsing field county_1_schools:select1
+Parsing field school1_details:string
+xhtml2recipeLen = 0
+Parsing field county_2_schools:select1
+Parsing field school2_details_copy:string
+xhtml2recipeLen = 1
+Parsing field county_3_schools:select1
+Parsing field school3_details:string
+xhtml2recipeLen = 2
+Parsing field county_4_schools:select1
+Parsing field school4_details:string
+xhtml2recipeLen = 3
+Parsing field prompt__1397581086664:information
+xhtml2recipeLen = 4
+Found multiple-choice selection definition 'counties'
+Found multiple-choice selection definition 'county_1_schools'
+Found multiple-choice selection definition 'county_2_schools'
+Found multiple-choice selection definition 'county_3_schools'
+Found multiple-choice selection definition 'county_4_schools'
+
+
+Successfully parsed 9499 characters !
+xhtmlFormName=01GoyPro, xhtmlFormVersion=111055708
+Writing recipe to '111055708.recipe'
+Writing template to '111055708.template'
+../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field KENYA_MANAGEMENT_SURVEY_JANUA:information
+xhtml2recipeLen = 0
+Parsing field interviewer:string
+xhtml2recipeLen = 1
+Parsing field clusterid:integer
+Parsing INT field clusterid:integer
+clusterid:integer:1:30:0
+Parsing field hhid:integer
+Parsing INT field hhid:integer
+hhid:integer:1:15:0
+Parsing field gps:geopoint
+xhtml2recipeLen = 4
+Parsing field hhinterviewed_yn:select1
+Parsing field consent:select1
+Parsing field interview_start_time:integer
+Parsing INT field interview_start_time:integer
+interview_start_time:integer:0:2400:0
+Parsing field name_hhhead:string
+xhtml2recipeLen = 6
+Parsing field head_hh_school_yn:select1
+Parsing field head_hh_educ_highest:select1
+Parsing field num_km_to_facility:integer
+Parsing INT field num_km_to_facility:integer
+Parsing field min_to_health_facility:integer
+Parsing INT field min_to_health_facility:integer
+Parsing field BEDNET_questions_follow_next:information
+xhtml2recipeLen = 9
+Parsing field totalpersons_lastnight:integer
+Parsing INT field totalpersons_lastnight:integer
+Parsing field totalpersons_usual:integer
+Parsing INT field totalpersons_usual:integer
+Parsing field numhhsleepingspaces_ln:integer
+Parsing INT field numhhsleepingspaces_ln:integer
+Parsing field numhhsleepingspaces_usual:integer
+Parsing INT field numhhsleepingspaces_usual:integer
+Parsing field nets_yn:select1
+Parsing field nets_numberinhh:integer
+Parsing INT field nets_numberinhh:integer
+Parsing field net_holes_ever_yn:select1
+Parsing field net_holes_cause:selectn
+Parsing field net_holes_repaired_yn:select1
+Parsing field net_holes_repair_method:selectn
+Parsing field net_holes_notrepaired_reason:select1
+Parsing field net_holes_notrepaired_other:string
+xhtml2recipeLen = 15
+Parsing field net_holes_messages_yn:select1
+Parsing field net_holes_messages_where:selectn
+Parsing field visithomemalaria:select1
+Parsing field itn_netinfosource:select1
+Parsing field HOUSEHOLD_WEALTH_questions_fo:information
+xhtml2recipeLen = 16
+Parsing field wlth_hhwater:select1
+Parsing field water_wheresource:select1
+Parsing field water_howlong:integer
+Parsing INT field water_howlong:integer
+Parsing field water_whofetches:select1
+Parsing field water_safedrink_yn:select1
+Parsing field water_makesafe:selectn
+Parsing field water_chlorine_type:select1
+Parsing field wlth_hhtoilet:select1
+Parsing field toilet_share:select1
+Parsing field wlth_toilet_numotherhholds:integer
+Parsing INT field wlth_toilet_numotherhholds:integer
+Parsing field wlth_hhcook:select1
+Parsing field wlth_hhfloor:select1
+Parsing field wlth_roof:select1
+Parsing field wlth_extwalls:select1
+Parsing field wlth_elect:select1
+Parsing field wlth_radio:select1
+Parsing field wlth_tv:select1
+Parsing field wlth_mobphone:select1
+Parsing field wlth_nonmobphone:select1
+Parsing field wlth_refridg:select1
+Parsing field wlth_watch:select1
+Parsing field wlth_bicycle:select1
+Parsing field wlth_motocyc:select1
+Parsing field wlth_animaldrawncart:select1
+Parsing field wlth_car:select1
+Parsing field wlth_boat_motor:select1
+Parsing field wlth_hhagland:select1
+Parsing field wlth_hectaresownland:integer
+Parsing INT field wlth_hectaresownland:integer
+Parsing field wlth_ownfarmanimals:select1
+Parsing field wlth_numcattle:integer
+Parsing INT field wlth_numcattle:integer
+Parsing field wlth_milkcowsbulls:integer
+Parsing INT field wlth_milkcowsbulls:integer
+Parsing field wlth_horsesdonkeysmules:integer
+Parsing INT field wlth_horsesdonkeysmules:integer
+Parsing field wlth_goats:integer
+Parsing INT field wlth_goats:integer
+Parsing field wlth_sheep:integer
+Parsing INT field wlth_sheep:integer
+Parsing field wlth_chickens:integer
+Parsing INT field wlth_chickens:integer
+Parsing field wlth_bankaccount:select1
+Parsing field Prompt1356176371311:information
+xhtml2recipeLen = 26
+Parsing field handwash_observe_yn:select1
+Parsing field handwash_station:select1
+Parsing field handwash_water_present:select1
+Parsing field handwash_cleaning_agent:select1
+Parsing field Prompt1358572577517:information
+xhtml2recipeLen = 27
+Parsing field chw_presence_yn:select1
+Parsing field Prompt1358622580042:information
+xhtml2recipeLen = 28
+Parsing field fevero5_last2weeks_num:integer
+Parsing INT field fevero5_last2weeks_num:integer
+fevero5_last2weeks_num:integer:5:1004:0
+Parsing field fevero5_bloodtaken_num:integer
+Parsing INT field fevero5_bloodtaken_num:integer
+Parsing field This_portion_of_the_interview:information
+xhtml2recipeLen = 31
+Found multiple-choice selection definition 'hhinterviewed_yn'
+Found multiple-choice selection definition 'consent'
+Found multiple-choice selection definition 'head_hh_school_yn'
+Found multiple-choice selection definition 'head_hh_educ_highest'
+Found multiple-choice selection definition 'nets_yn'
+Found multiple-choice selection definition 'net_holes_ever_yn'
+Found multiple-choice selection definition 'net_holes_cause'
+Found multiple-choice selection definition 'net_holes_repaired_yn'
+Found multiple-choice selection definition 'net_holes_repair_method'
+Found multiple-choice selection definition 'net_holes_notrepaired_reason'
+Found multiple-choice selection definition 'net_holes_messages_yn'
+Found multiple-choice selection definition 'net_holes_messages_where'
+Found multiple-choice selection definition 'visithomemalaria'
+Found multiple-choice selection definition 'itn_netinfosource'
+Found multiple-choice selection definition 'wlth_hhwater'
+Found multiple-choice selection definition 'water_wheresource'
+Found multiple-choice selection definition 'water_whofetches'
+Found multiple-choice selection definition 'water_safedrink_yn'
+Found multiple-choice selection definition 'water_makesafe'
+Found multiple-choice selection definition 'water_chlorine_type'
+Found multiple-choice selection definition 'wlth_hhtoilet'
+Found multiple-choice selection definition 'toilet_share'
+Found multiple-choice selection definition 'wlth_hhcook'
+Found multiple-choice selection definition 'wlth_hhfloor'
+Found multiple-choice selection definition 'wlth_roof'
+Found multiple-choice selection definition 'wlth_extwalls'
+Found multiple-choice selection definition 'wlth_elect'
+Found multiple-choice selection definition 'wlth_radio'
+Found multiple-choice selection definition 'wlth_tv'
+Found multiple-choice selection definition 'wlth_mobphone'
+Found multiple-choice selection definition 'wlth_nonmobphone'
+Found multiple-choice selection definition 'wlth_refridg'
+Found multiple-choice selection definition 'wlth_watch'
+Found multiple-choice selection definition 'wlth_bicycle'
+Found multiple-choice selection definition 'wlth_motocyc'
+Found multiple-choice selection definition 'wlth_animaldrawncart'
+Found multiple-choice selection definition 'wlth_car'
+Found multiple-choice selection definition 'wlth_boat_motor'
+Found multiple-choice selection definition 'wlth_hhagland'
+Found multiple-choice selection definition 'wlth_ownfarmanimals'
+Found multiple-choice selection definition 'wlth_bankaccount'
+Found multiple-choice selection definition 'handwash_observe_yn'
+Found multiple-choice selection definition 'handwash_station'
+Found multiple-choice selection definition 'handwash_water_present'
+Found multiple-choice selection definition 'handwash_cleaning_agent'
+Found multiple-choice selection definition 'chw_presence_yn'
+
+
+Successfully parsed 74659 characters !
+xhtmlFormName=1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05, xhtmlFormVersion=27251
+Writing recipe to '27251.recipe'
+Writing template to '27251.template'
+../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field prompt__1405349618864:information
+xhtml2recipeLen = 0
+Parsing field c2:select1
+Parsing field c2a:integer
+Parsing INT field c2a:integer
+c2a:integer:2:1001:0
+Parsing field c3:select1
+Parsing field C_4a:select1
+Parsing field C_4b:select1
+Parsing field C_4c:select1
+Parsing field C4d:select1
+Parsing field C_4e:select1
+Parsing field C_4f:select1
+Parsing field C_4g:select1
+Parsing field C_4h:select1
+Parsing field C_4i:select1
+Parsing field C_4j:select1
+Parsing field c5:string
+xhtml2recipeLen = 2
+Parsing field c5a:integer
+Parsing INT field c5a:integer
+c5a:integer:5:1004:0
+Parsing field c6:string
+xhtml2recipeLen = 4
+Parsing field c6a:integer
+Parsing INT field c6a:integer
+Parsing field c7a:select1
+Parsing field c7b:select1
+Parsing field c7:select1
+Parsing field c8:select1
+Parsing field outletid:string
+xhtml2recipeLen = 6
+Parsing field prompt__1405349725398:information
+xhtml2recipeLen = 7
+Parsing field Consent:select1
+Parsing field prompt__1405349801521:information
+xhtml2recipeLen = 8
+Parsing field S1:select1
+Parsing field S2:select1
+Parsing field s3:select1
+Parsing field s4:select1
+Parsing field s5:select1
+Parsing field s6:select1
+Parsing field prompt__1405359385565:information
+xhtml2recipeLen = 9
+Parsing field concent:select1
+Parsing field prompt__1405359385565_copy:information
+xhtml2recipeLen = 10
+Parsing field prompt__1405359385565_copy_copy:information
+xhtml2recipeLen = 11
+Parsing field prompt__1405359447234:information
+xhtml2recipeLen = 12
+Parsing field prompt__1405359678050:information
+xhtml2recipeLen = 13
+Parsing field Antimalarials_Audit:subform
+xhtml2recipeLen = 14
+Parsing field prompt__1406606190937:information
+xhtml2recipeLen = 15
+Parsing field am_num:integer
+Parsing INT field am_num:integer
+Parsing field am_outlet:select1
+Parsing field sub_outlet_code:string
+xhtml2recipeLen = 17
+Parsing field a3:select1
+Parsing field prompt__1405954914773:information
+xhtml2recipeLen = 18
+Parsing field prompt__1406325467158:information
+xhtml2recipeLen = 19
+Parsing field aiGeneric_a:select1
+Parsing field aiGeneric_a_other:string
+xhtml2recipeLen = 20
+Parsing field tsg_2a1:integer
+Parsing INT field tsg_2a1:integer
+Parsing field nt_2a1:integer
+Parsing INT field nt_2a1:integer
+Parsing field excip_a:integer
+Parsing INT field excip_a:integer
+Parsing field salt_a:string
+xhtml2recipeLen = 24
+Parsing field ct_a:select1
+Parsing field aiGeneric_b:select1
+Parsing field aiGeneric_b_other:string
+xhtml2recipeLen = 25
+Parsing field tsg_2b1:integer
+Parsing INT field tsg_2b1:integer
+Parsing field nt_2b1:integer
+Parsing INT field nt_2b1:integer
+Parsing field excip_b:integer
+Parsing INT field excip_b:integer
+Parsing field salt_b:string
+xhtml2recipeLen = 29
+Parsing field ct_b:select1
+Parsing field aiGeneric_c:select1
+Parsing field aiGeneric_c_other:string
+xhtml2recipeLen = 30
+Parsing field tsg_2c1:integer
+Parsing INT field tsg_2c1:integer
+Parsing field nt_2c1:integer
+Parsing INT field nt_2c1:integer
+Parsing field excip_c:integer
+Parsing INT field excip_c:integer
+Parsing field salt_c:string
+xhtml2recipeLen = 34
+Parsing field amBrand:string
+xhtml2recipeLen = 35
+Parsing field a5:string
+xhtml2recipeLen = 36
+Parsing field a6:string
+xhtml2recipeLen = 37
+Parsing field a7b:select1
+Parsing field tsg1_7a:integer
+Parsing INT field tsg1_7a:integer
+Parsing field tsg2_7a:integer
+Parsing INT field tsg2_7a:integer
+Parsing field tsg_8:select1
+Parsing field a9:select1
+Parsing field nt1_10:integer
+Parsing INT field nt1_10:integer
+Parsing field a11:select1
+Parsing field ts_12p:integer
+Parsing INT field ts_12p:integer
+Parsing field g_12p:integer
+Parsing INT field g_12p:integer
+Parsing field a13p:integer
+Parsing INT field a13p:integer
+Parsing field nt_13n:integer
+Parsing INT field nt_13n:integer
+Parsing field a14:selectn
+Parsing field t2AM:select1
+Parsing field prompt__1405942059754:information
+xhtml2recipeLen = 45
+Parsing field prompt__1406325467158_copy:information
+xhtml2recipeLen = 46
+Parsing field aiGeneric_a_copy:select1
+Parsing field aiGeneric_a_copy_other:string
+xhtml2recipeLen = 47
+Parsing field tsg_2a1_copy:integer
+Parsing INT field tsg_2a1_copy:integer
+Parsing field excip_a_copy:integer
+Parsing INT field excip_a_copy:integer
+Parsing field salt_a_copy:string
+xhtml2recipeLen = 50
+Parsing field amBrand_copy:string
+xhtml2recipeLen = 51
+Parsing field a5_copy:string
+xhtml2recipeLen = 52
+Parsing field a6_copy:string
+xhtml2recipeLen = 53
+Parsing field a7b_copy:select1
+Parsing field nt_7a:integer
+Parsing INT field nt_7a:integer
+Parsing field tsg_8_copy:select1
+Parsing field a9_copy:select1
+Parsing field nt2_10:integer
+Parsing INT field nt2_10:integer
+Parsing field a11_copy:select1
+Parsing field ts_12p_copy:integer
+Parsing INT field ts_12p_copy:integer
+Parsing field g_12p_copy:integer
+Parsing INT field g_12p_copy:integer
+Parsing field a13p_copy:integer
+Parsing INT field a13p_copy:integer
+Parsing field nt_13n_copy:integer
+Parsing INT field nt_13n_copy:integer
+Parsing field a14_copy:selectn
+Parsing field a14_other_copy:string
+xhtml2recipeLen = 60
+Parsing field a15_copy:string
+xhtml2recipeLen = 61
+Parsing field t2AM_copy:select1
+Parsing field t3AM:string
+xhtml2recipeLen = 62
+Parsing field prompt__1406804321498:information
+xhtml2recipeLen = 63
+Parsing field prompt__1406612473890:information
+xhtml2recipeLen = 64
+Parsing field a16:select1
+Parsing field a17:string
+xhtml2recipeLen = 65
+Parsing field prompt__1405358116196:information
+xhtml2recipeLen = 66
+Parsing field d1:select1
+Parsing field d2:integer
+Parsing INT field d2:integer
+d2:integer:2:1001:0
+Parsing field d3:integer
+Parsing INT field d3:integer
+d3:integer:1:1000:0
+Parsing field d4:integer
+Parsing INT field d4:integer
+d4:integer:4:1003:0
+Parsing field d5:select1
+Parsing field d6:select1
+Parsing field d7:select1
+Parsing field prompt__1405358838593:information
+xhtml2recipeLen = 70
+Parsing field prompt__1405360221969_copy:information
+xhtml2recipeLen = 71
+Parsing field RDT_AUDIT:subform
+xhtml2recipeLen = 72
+Parsing field prompt__1405942872793:information
+xhtml2recipeLen = 73
+Parsing field r_outlet:select1
+Parsing field Sub_outlet_code:string
+xhtml2recipeLen = 74
+Parsing field r_num:integer
+Parsing INT field r_num:integer
+Parsing field r1:string
+xhtml2recipeLen = 76
+Parsing field r2:selectn
+Parsing field r3:selectn
+Parsing field r4:string
+xhtml2recipeLen = 77
+Parsing field r5:select1
+Parsing field r6:string
+xhtml2recipeLen = 78
+Parsing field r7:select1
+Parsing field r8:string
+xhtml2recipeLen = 79
+Parsing field r9m:select1
+Parsing field r10m:select1
+Parsing field r11:string
+xhtml2recipeLen = 80
+Parsing field r12:string
+xhtml2recipeLen = 81
+Parsing field r12a:select1
+Parsing field r13:select1
+Parsing field r14:select1
+Parsing field r15a:integer
+Parsing INT field r15a:integer
+Parsing field r15b:integer
+Parsing INT field r15b:integer
+Parsing field r16:select1
+Parsing field r17a:integer
+Parsing INT field r17a:integer
+Parsing field r17b:integer
+Parsing INT field r17b:integer
+Parsing field R18:integer
+Parsing INT field R18:integer
+Parsing field r18a:select1
+Parsing field R18b:integer
+Parsing INT field R18b:integer
+Parsing field r18c:integer
+Parsing INT field r18c:integer
+Parsing field r19:select1
+Parsing field r19_other:string
+xhtml2recipeLen = 89
+Parsing field r20:string
+xhtml2recipeLen = 90
+Parsing field t2RDT:select1
+Parsing field t3RDT:string
+xhtml2recipeLen = 91
+Parsing field t1RDTa:select1
+Parsing field t1RDTb:select1
+Parsing field prompt__1406807384647:information
+xhtml2recipeLen = 92
+Parsing field prompt__1406616177534:information
+xhtml2recipeLen = 93
+Parsing field r21:select1
+Parsing field r22_1:string
+xhtml2recipeLen = 94
+Parsing field prompt__1405360221969:information
+xhtml2recipeLen = 95
+Parsing field prompt__1406705214233:information
+xhtml2recipeLen = 96
+Parsing field p0:select1
+Parsing field p1:select1
+Parsing field p2:integer
+Parsing INT field p2:integer
+Parsing field p3:select1
+Parsing field p4:select1
+Parsing field p5:select1
+Parsing field p6:select1
+Parsing field p7:selectn
+Parsing field p8:selectn
+Parsing field prompt__1406703888815:information
+xhtml2recipeLen = 98
+Parsing field p10a:string
+xhtml2recipeLen = 99
+Parsing field p10b:selectn
+Parsing field p11a:string
+xhtml2recipeLen = 100
+Parsing field p11b:selectn
+Parsing field p12a:string
+xhtml2recipeLen = 101
+Parsing field p112b:selectn
+Parsing field p13a:string
+xhtml2recipeLen = 102
+Parsing field p13b:selectn
+Parsing field p14a:string
+xhtml2recipeLen = 103
+Parsing field p14b:selectn
+Parsing field p15a:string
+xhtml2recipeLen = 104
+Parsing field p15b:selectn
+Parsing field p16a:selectn
+Parsing field p16a_other:string
+xhtml2recipeLen = 105
+Parsing field P17:selectn
+Parsing field prompt__1405360353746_copy:information
+xhtml2recipeLen = 106
+Parsing field p18a:select1
+Parsing field p18a_other:string
+xhtml2recipeLen = 107
+Parsing field p19a_tsg:integer
+Parsing INT field p19a_tsg:integer
+Parsing field p20a:select1
+Parsing field p20a_AI:select1
+Parsing field p18b_other:string
+xhtml2recipeLen = 109
+Parsing field p19b_tsg:integer
+Parsing INT field p19b_tsg:integer
+Parsing field p20b:select1
+Parsing field p18c:select1
+Parsing field p18c_other:string
+xhtml2recipeLen = 111
+Parsing field p19c_tsg:integer
+Parsing INT field p19c_tsg:integer
+Parsing field P20:select1
+Parsing field p21:string
+xhtml2recipeLen = 113
+Parsing field p22:string
+xhtml2recipeLen = 114
+Parsing field p23:integer
+Parsing INT field p23:integer
+Parsing field p24:integer
+Parsing INT field p24:integer
+Parsing field p25:integer
+Parsing INT field p25:integer
+Parsing field p27:selectn
+Parsing field p28a:select1
+Parsing field p28a_other:string
+xhtml2recipeLen = 118
+Parsing field p29a_tsg:integer
+Parsing INT field p29a_tsg:integer
+Parsing field p29a_nta:integer
+Parsing INT field p29a_nta:integer
+Parsing field p30a:select1
+Parsing field p28b:select1
+Parsing field p28b_other:string
+xhtml2recipeLen = 121
+Parsing field p29b_tsg:integer
+Parsing INT field p29b_tsg:integer
+Parsing field p29b_nta:integer
+Parsing INT field p29b_nta:integer
+Parsing field p30b:select1
+Parsing field p28c:select1
+Parsing field p28c_other:string
+xhtml2recipeLen = 124
+Parsing field p29c_tsg:integer
+Parsing INT field p29c_tsg:integer
+Parsing field p29c_nta:integer
+Parsing INT field p29c_nta:integer
+Parsing field p30:select1
+Parsing field p31:string
+xhtml2recipeLen = 127
+Parsing field p32:string
+xhtml2recipeLen = 128
+Parsing field p33:integer
+Parsing INT field p33:integer
+Parsing field p34:integer
+Parsing INT field p34:integer
+Parsing field p35:integer
+Parsing INT field p35:integer
+Parsing field p36:selectn
+Parsing field p36_other:string
+xhtml2recipeLen = 132
+Parsing field p37:selectn
+Parsing field p40:select1
+Parsing field p41:select1
+Parsing field p42:select1
+Parsing field p43:selectn
+Parsing field p44:select1
+Parsing field p45:selectn
+Parsing field p45_other:string
+xhtml2recipeLen = 133
+Parsing field p46:select1
+Parsing field p47:select1
+Parsing field p48:selectn
+Parsing field p49:selectn
+Parsing field p49_other:string
+xhtml2recipeLen = 134
+Parsing field prompt__1405360353746_copy1:information
+xhtml2recipeLen = 135
+Parsing field ors1:select1
+Parsing field ors2:select1
+Parsing field ors3:selectn
+Parsing field ors3_other:string
+xhtml2recipeLen = 136
+Parsing field ors4:select1
+Parsing field prompt__1405360353746:information
+xhtml2recipeLen = 137
+Parsing field completetsg:select1
+Parsing field completenontsg:select1
+Parsing field completerdt:select1
+Parsing field prompt__1405367938826:information
+xhtml2recipeLen = 138
+Parsing field prompt__1405606494378:information
+xhtml2recipeLen = 139
+Parsing field c91d:date
+xhtml2recipeLen = 140
+Parsing field c9_1:select1
+Parsing field c10_1:select1
+Parsing field c10_1_other:string
+xhtml2recipeLen = 141
+Parsing field c9_2:select1
+Parsing field c10_2:select1
+Parsing field c9_2_other:string
+xhtml2recipeLen = 142
+Parsing field c10_3:select1
+Parsing field c10_3_other:string
+xhtml2recipeLen = 143
+Parsing field c11a:select1
+Parsing field c12a:select1
+Parsing field c11:string
+xhtml2recipeLen = 144
+Parsing field c12:string
+xhtml2recipeLen = 145
+Parsing field location:string
+xhtml2recipeLen = 146
+Parsing field c13:string
+xhtml2recipeLen = 147
+Parsing field prompt__1405442888587:information
+xhtml2recipeLen = 148
+Parsing field c9_3:select1
+Parsing field c4_a:select1
+Parsing field c3_copy_copy2:select1
+Parsing field c3_copy_copy1:select1
+Parsing field c3_copy_copy:select1
+Found multiple-choice selection definition 'c2'
+Found multiple-choice selection definition 'c3'
+Found multiple-choice selection definition 'C_4a'
+Found multiple-choice selection definition 'C_4b'
+Found multiple-choice selection definition 'C_4c'
+Found multiple-choice selection definition 'C4d'
+Found multiple-choice selection definition 'C_4e'
+Found multiple-choice selection definition 'C_4f'
+Found multiple-choice selection definition 'C_4g'
+Found multiple-choice selection definition 'C_4h'
+Found multiple-choice selection definition 'C_4i'
+Found multiple-choice selection definition 'C_4j'
+Found multiple-choice selection definition 'c7a'
+Found multiple-choice selection definition 'c7b'
+Found multiple-choice selection definition 'c7'
+Found multiple-choice selection definition 'c8'
+Found multiple-choice selection definition 'Consent'
+Found multiple-choice selection definition 'S1'
+Found multiple-choice selection definition 'S2'
+Found multiple-choice selection definition 's3'
+Found multiple-choice selection definition 's4'
+Found multiple-choice selection definition 's5'
+Found multiple-choice selection definition 's6'
+Found multiple-choice selection definition 'concent'
+Found multiple-choice selection definition 'am_outlet'
+Found multiple-choice selection definition 'a3'
+Found multiple-choice selection definition 'aiGeneric_a'
+Found multiple-choice selection definition 'ct_a'
+Found multiple-choice selection definition 'aiGeneric_b'
+Found multiple-choice selection definition 'ct_b'
+Found multiple-choice selection definition 'aiGeneric_c'
+Found multiple-choice selection definition 'a7b'
+Found multiple-choice selection definition 'tsg_8'
+Found multiple-choice selection definition 'a9'
+Found multiple-choice selection definition 'a11'
+Found multiple-choice selection definition 'a14'
+Found multiple-choice selection definition 't2AM'
+Found multiple-choice selection definition 'aiGeneric_a_copy'
+Found multiple-choice selection definition 'a7b_copy'
+Found multiple-choice selection definition 'tsg_8_copy'
+Found multiple-choice selection definition 'a9_copy'
+Found multiple-choice selection definition 'a11_copy'
+Found multiple-choice selection definition 'a14_copy'
+Found multiple-choice selection definition 't2AM_copy'
+Found multiple-choice selection definition 'a16'
+Found multiple-choice selection definition 'd1'
+Found multiple-choice selection definition 'd5'
+Found multiple-choice selection definition 'd6'
+Found multiple-choice selection definition 'd7'
+Found multiple-choice selection definition 'r_outlet'
+Found multiple-choice selection definition 'r2'
+Found multiple-choice selection definition 'r3'
+Found multiple-choice selection definition 'r5'
+Found multiple-choice selection definition 'r7'
+Found multiple-choice selection definition 'r9m'
+Found multiple-choice selection definition 'r10m'
+Found multiple-choice selection definition 'r12a'
+Found multiple-choice selection definition 'r13'
+Found multiple-choice selection definition 'r14'
+Found multiple-choice selection definition 'r16'
+Found multiple-choice selection definition 'r18a'
+Found multiple-choice selection definition 'r19'
+Found multiple-choice selection definition 't2RDT'
+Found multiple-choice selection definition 't1RDTa'
+Found multiple-choice selection definition 't1RDTb'
+Found multiple-choice selection definition 'r21'
+Found multiple-choice selection definition 'p0'
+Found multiple-choice selection definition 'p1'
+Found multiple-choice selection definition 'p3'
+Found multiple-choice selection definition 'p4'
+Found multiple-choice selection definition 'p5'
+Found multiple-choice selection definition 'p6'
+Found multiple-choice selection definition 'p7'
+Found multiple-choice selection definition 'p8'
+Found multiple-choice selection definition 'p10b'
+Found multiple-choice selection definition 'p11b'
+Found multiple-choice selection definition 'p112b'
+Found multiple-choice selection definition 'p13b'
+Found multiple-choice selection definition 'p14b'
+Found multiple-choice selection definition 'p15b'
+Found multiple-choice selection definition 'p16a'
+Found multiple-choice selection definition 'P17'
+Found multiple-choice selection definition 'p18a'
+Found multiple-choice selection definition 'p20a'
+Found multiple-choice selection definition 'p20a_AI'
+Found multiple-choice selection definition 'p20b'
+Found multiple-choice selection definition 'p18c'
+Found multiple-choice selection definition 'P20'
+Found multiple-choice selection definition 'p27'
+Found multiple-choice selection definition 'p28a'
+Found multiple-choice selection definition 'p30a'
+Found multiple-choice selection definition 'p28b'
+Found multiple-choice selection definition 'p30b'
+Found multiple-choice selection definition 'p28c'
+Found multiple-choice selection definition 'p30'
+Found multiple-choice selection definition 'p36'
+Found multiple-choice selection definition 'p37'
+Found multiple-choice selection definition 'p40'
+Found multiple-choice selection definition 'p41'
+Found multiple-choice selection definition 'p42'
+Found multiple-choice selection definition 'p43'
+Found multiple-choice selection definition 'p44'
+Found multiple-choice selection definition 'p45'
+Found multiple-choice selection definition 'p46'
+Found multiple-choice selection definition 'p47'
+Found multiple-choice selection definition 'p48'
+Found multiple-choice selection definition 'p49'
+Found multiple-choice selection definition 'ors1'
+Found multiple-choice selection definition 'ors2'
+Found multiple-choice selection definition 'ors3'
+Found multiple-choice selection definition 'ors4'
+Found multiple-choice selection definition 'completetsg'
+Found multiple-choice selection definition 'completenontsg'
+Found multiple-choice selection definition 'completerdt'
+Found multiple-choice selection definition 'c9_1'
+Found multiple-choice selection definition 'c10_1'
+Found multiple-choice selection definition 'c9_2'
+Found multiple-choice selection definition 'c10_2'
+Found multiple-choice selection definition 'c10_3'
+Found multiple-choice selection definition 'c11a'
+Found multiple-choice selection definition 'c12a'
+Found multiple-choice selection definition 'c9_3'
+Found multiple-choice selection definition 'c4_a'
+Found multiple-choice selection definition 'c3_copy_copy2'
+Found multiple-choice selection definition 'c3_copy_copy1'
+Found multiple-choice selection definition 'c3_copy_copy'
+
+
+Successfully parsed 439755 characters !
+xhtmlFormName=ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33, xhtmlFormVersion=212061361
+Writing recipe to '212061361.recipe'
+Writing template to '212061361.template'
+../forms/AllQuestions_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field Text:string
+xhtml2recipeLen = 0
+Parsing field integer:integer
+Parsing INT field integer:integer
+Parsing field Decimal:decimal
+Parsing INT field Decimal:decimal
+Parsing field Dropdown:select1
+Parsing field radio_button:select1
+Parsing field checkbox:selectn
+Parsing field date:date
+xhtml2recipeLen = 3
+Parsing field Gps_question:geopoint
+xhtml2recipeLen = 4
+Found multiple-choice selection definition 'Dropdown'
+Found multiple-choice selection definition 'radio_button'
+Found multiple-choice selection definition 'checkbox'
+
+
+Successfully parsed 3551 characters !
+xhtmlFormName=AllQuestions, xhtmlFormVersion=1000183
+Writing recipe to '1000183.recipe'
+Writing template to '1000183.template'
+../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field prompt__1359549345113:information
+xhtml2recipeLen = 0
+Parsing field Radio:select1
+Parsing field score_one:string
+xhtml2recipeLen = 1
+Parsing field score_two:string
+xhtml2recipeLen = 2
+Parsing field score_three:string
+xhtml2recipeLen = 3
+Parsing field prompt__1359549443639:information
+xhtml2recipeLen = 4
+Found multiple-choice selection definition 'Radio'
+
+
+Successfully parsed 2875 characters !
+xhtmlFormName=Calculated Logic, xhtmlFormVersion=27209
+Writing recipe to '27209.recipe'
+Writing template to '27209.template'
+../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field prompt__1405942872793:information
+xhtml2recipeLen = 0
+Parsing field r_num:integer
+Parsing INT field r_num:integer
+Parsing field r_outlet:select1
+Parsing field r1:string
+xhtml2recipeLen = 2
+Parsing field r2:selectn
+Parsing field r3:selectn
+Parsing field r3_other:string
+xhtml2recipeLen = 3
+Parsing field r4:string
+xhtml2recipeLen = 4
+Parsing field r5:select1
+Parsing field r5_other:string
+xhtml2recipeLen = 5
+Parsing field r6:string
+xhtml2recipeLen = 6
+Parsing field r7:select1
+Parsing field r8:string
+xhtml2recipeLen = 7
+Parsing field r9m:select1
+Parsing field r9y:integer
+Parsing INT field r9y:integer
+Parsing field r10m:select1
+Parsing field r10y:integer
+Parsing INT field r10y:integer
+Parsing field r11:integer
+Parsing INT field r11:integer
+Parsing field r12:integer
+Parsing INT field r12:integer
+Parsing field r13:select1
+Parsing field r14:select1
+Parsing field r15a:integer
+Parsing INT field r15a:integer
+Parsing field r15b:integer
+Parsing INT field r15b:integer
+Parsing field r16:select1
+Parsing field r17a:integer
+Parsing INT field r17a:integer
+Parsing field r17b:integer
+Parsing INT field r17b:integer
+Parsing field R18:integer
+Parsing INT field R18:integer
+Parsing field R18a:integer
+Parsing INT field R18a:integer
+Parsing field r19:selectn
+Parsing field r19_other:string
+xhtml2recipeLen = 18
+Parsing field r20:string
+xhtml2recipeLen = 19
+Parsing field Image2:image
+xhtml2recipeLen = 20
+Parsing field Subform_list:subformlist
+xhtml2recipeLen = 21
+Parsing field prompt__1406807384647:information
+xhtml2recipeLen = 22
+Parsing field prompt__1406616177534:information
+xhtml2recipeLen = 23
+Found multiple-choice selection definition 'r_outlet'
+Found multiple-choice selection definition 'r2'
+Found multiple-choice selection definition 'r3'
+Found multiple-choice selection definition 'r5'
+Found multiple-choice selection definition 'r7'
+Found multiple-choice selection definition 'r9m'
+Found multiple-choice selection definition 'r10m'
+Found multiple-choice selection definition 'r13'
+Found multiple-choice selection definition 'r14'
+Found multiple-choice selection definition 'r16'
+Found multiple-choice selection definition 'r19'
+
+
+Successfully parsed 27643 characters !
+xhtmlFormName=RDT_Subform, xhtmlFormVersion=9212068602
+Writing recipe to '9212068602.recipe'
+Writing template to '9212068602.template'
+../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field prompt__1426421240266:information
+xhtml2recipeLen = 0
+Parsing field Surveyor:select1
+Parsing field Village:integer
+Parsing INT field Village:integer
+Village:integer:1:150:0
+Parsing field Type:select1
+Parsing field GPS:geopoint
+xhtml2recipeLen = 2
+Parsing field Etat:select1
+Parsing field Photo:image
+xhtml2recipeLen = 3
+Parsing field Date_reparation:date
+xhtml2recipeLen = 4
+Parsing field Comite_deja:select1
+Parsing field Comite_Y_N:select1
+Parsing field Coti_Y_N:select1
+Parsing field prompt__1426422785953:information
+xhtml2recipeLen = 5
+Found multiple-choice selection definition 'Surveyor'
+Found multiple-choice selection definition 'Type'
+Found multiple-choice selection definition 'Etat'
+Found multiple-choice selection definition 'Comite_deja'
+Found multiple-choice selection definition 'Comite_Y_N'
+Found multiple-choice selection definition 'Coti_Y_N'
+
+
+Successfully parsed 10494 characters !
+xhtmlFormName=WatSan_CI_B1_copy, xhtmlFormVersion=9214079410
+Writing recipe to '9214079410.recipe'
+Writing template to '9214079410.template'
+../forms/nz_redcross_1a_people.xml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+
+
+Successfully parsed 7618 characters !
+formName=nz-redcross-1a-people, formVersion=3
+Writing recipe to 'nz-redcross-1a-people.3.recipe'
+Writing template to 'nz-redcross-1a-people.3.template'
+../forms/nz_redcross_1b_family_needs.xml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+
+
+Successfully parsed 5449 characters !
+formName=nz-redcross-1b-family-needs, formVersion=1
+Writing recipe to 'nz-redcross-1b-family-needs.1.recipe'
+Writing template to 'nz-redcross-1b-family-needs.1.template'
+sd: No such file or directory.
+servals-MacBook-Pro-2:sd-test-data serval$ ervals-MacBook-Pro-2:smac serval$ make
+-bash: ervals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c main.c -o main.o
+clang: error: no such file or directory: 'main.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c smac.c -o smac.o
+clang: error: no such file or directory: 'smac.c'
+clang: error: no input files
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c recipe.c -o recipe.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xml2recipe.c -o xml2recipe.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xhtml2recipe.c -o xhtml2recipe.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c map.c -o map.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c dexml.c -o dexml.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c md5.c -o md5.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c unicode.c -o unicode.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c case.c -o case.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c length.c -o length.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVservals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c recipe.c -o recipe.o
+clang: error: no such file or directory: 'recipe.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xml2recipe.c -o xml2recipe.o
+clang: error: no such file or directory: 'xml2recipe.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xhtml2recipe.c -o xhtml2recipe.o
+clang: error: no such file or directory: 'xhtml2recipe.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c map.c -o map.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c dexml.c -o dexml.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c md5.c -o md5.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c unicode.c -o unicode.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c case.c -o case.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c length.c -o length.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c lowercasealpha.c -o lowercasealpha.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nonalpha.c -o nonalpha.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packedascii.c -o packedascii.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packed_stats.c -o packed_stats.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. clang: error: no such file or directory: 'map.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c dexml.c -o dexml.o
+clang: error: no such file or directory: 'dexml.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c md5.c -o md5.o
+clang: error: no such file or directory: 'md5.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c unicode.c -o unicode.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c case.c -o case.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c length.c -o length.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c lowercasealpha.c -o lowercasealpha.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nonalpha.c -o nonalpha.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packedascii.c -o packedascii.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packed_stats.c -o packed_stats.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c charset.c -o charset.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c entropyutil.c -o entropyutil.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c arithmetic.c -o arithmetic.o
+gcc -g -Wall -O3 -Inaclang: error: no such file or directory: 'unicode.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c case.c -o case.o
+clang: error: no such file or directory: 'case.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c length.c -o length.o
+clang: error: no such file or directory: 'length.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c lowercasealpha.c -o lowercasealpha.o
+clang: error: no such file or directory: 'lowercasealpha.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nonalpha.c -o nonalpha.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packedascii.c -o packedascii.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packed_stats.c -o packed_stats.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c charset.c -o charset.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c entropyutil.c -o entropyutil.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c arithmetic.c -o arithmetic.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c gsinterpolative.c -o gsinterpolative.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c visualise.c -o visualise.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c crypto.c -o crypto.o
+crypto.c:108:5: warning: implicit declaration of function 'crypto_box_public_from_private' is invalid in C99 [-Wimplicclang: error: no such file or directory: 'nonalpha.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packedascii.c -o packedascii.o
+clang: error: no such file or directory: 'packedascii.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c packed_stats.c -o packed_stats.o
+clang: error: no such file or directory: 'packed_stats.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c charset.c -o charset.o
+clang: error: no such file or directory: 'charset.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c entropyutil.c -o entropyutil.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c arithmetic.c -o arithmetic.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c gsinterpolative.c -o gsinterpolative.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c visualise.c -o visualise.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c crypto.c -o crypto.o
+crypto.c:108:5: warning: implicit declaration of function 'crypto_box_public_from_private' is invalid in C99 [-Wimplicit-function-declaration]
+    crypto_box_public_from_private(pk, sk);
+    ^
+crypto.c:275:7: warning: unused variable 'frag_number' [-Wunused-variable]
+  int frag_number=0;
+      ^
+2 warnings generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o
+gcc -g -Wall -O3 -Inacl/include -std=clang: error: no such file or directory: 'entropyutil.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c arithmetic.c -o arithmetic.o
+clang: error: no such file or directory: 'arithmetic.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c gsinterpolative.c -o gsinterpolative.o
+clang: error: no such file or directory: 'gsinterpolative.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c visualise.c -o visualise.o
+clang: error: no such file or directory: 'visualise.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c crypto.c -o crypto.o
+crypto.c:108:5: warning: implicit declaration of function 'crypto_box_public_from_private' is invalid in C99 [-Wimplicit-function-declaration]
+    crypto_box_public_from_private(pk, sk);
+    ^
+crypto.c:275:7: warning: unused variable 'frag_number' [-Wunused-variable]
+  int frag_number=0;
+      ^
+2 warnings generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=clang: error: no such file or directory: 'crypto.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ crypto.c:108:5: warning: implicit declaration of function 'crypto_box_public_from_private' is invalid in C99 [-Wimplicit-function-declaration]
+-bash: crypto.c:108:5:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$     crypto_box_public_from_private(pk, sk);
+-bash: syntax error near unexpected token `pk,'
+servals-MacBook-Pro-2:sd-test-data serval$     ^
+crypto.c:275:7: warning: unused variable 'frag_number' [-Wunused-variable]
+  int frag_number=0;
+      ^
+2 warnings generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEM-bash: ^: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ crypto.c:275:7: warning: unused variable 'frag_number' [-Wunused-variable]
+-bash: crypto.c:275:7:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$   int frag_number=0;
+-bash: int: command not found
+servals-MacBook-Pro-2:sd-test-data serval$       ^
+-bash: ^: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ 2 warnings generated.
+-bash: 2: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o
+clang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o
+clang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_core_hsalsa20_ref/core.c -o nacl/src/crypto_core_hsalsa20_ref/core.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_scalarmult_curve25519_ref/base.c -o nacl/src/crypto_scalarmult_curve25519_ref/base.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_scalarmult_curve25519_ref/smult.c -o nacl/src/crypto_scalarmult_curve25519_ref/smult.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.c -o nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/sclang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.c -o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.o
+clang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_core_hsalsa20_ref/core.c -o nacl/src/crypto_core_hsalsa20_ref/core.o
+clang: error: no such file or directory: 'nacl/src/crypto_core_hsalsa20_ref/core.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_scalarmult_curve25519_ref/base.c -o nacl/src/crypto_scalarmult_curve25519_ref/base.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_scalarmult_curve25519_ref/smult.c -o nacl/src/crypto_scalarmult_curve25519_ref/smult.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.c -o nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_onetimeauth_poly1305_ref/auth.c -o nacl/src/crypto_onetimeauth_poly1305_ref/auth.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_onetimeauth_poly1305_ref/verify.c -o nacl/src/crypto_onetimeauth_poly1305_ref/verify.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_verify_16_ref/verify.c -o nacl/src/crypto_verify_16_ref/verify.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_xsaclang: error: no such file or directory: 'nacl/src/crypto_scalarmult_curve25519_ref/base.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_scalarmult_curve25519_ref/smult.c -o nacl/src/crypto_scalarmult_curve25519_ref/smult.o
+clang: error: no such file or directory: 'nacl/src/crypto_scalarmult_curve25519_ref/smult.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.c -o nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.o
+clang: error: no such file or directory: 'nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_onetimeauth_poly1305_ref/auth.c -o nacl/src/crypto_onetimeauth_poly1305_ref/auth.o
+clang: error: no such file or directory: 'nacl/src/crypto_onetimeauth_poly1305_ref/auth.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_onetimeauth_poly1305_ref/verify.c -o nacl/src/crypto_onetimeauth_poly1305_ref/verify.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_verify_16_ref/verify.c -o nacl/src/crypto_verify_16_ref/verify.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_xsalsa20_ref/xor.c -o nacl/src/crypto_stream_xsalsa20_ref/xor.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_xsalsa20_ref/stream.c -o nacl/src/crypto_stream_xsalsa20_ref/stream.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_core_salsa20_ref/core.c -o nacl/src/crypto_core_salsa20_ref/core.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/xor.c -o nacl/src/crypto_stream_salsa20_ref/xor.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/stream.c -o nacl/src/crypto_stream_salsa20_ref/stream.o
+clang: error: no such file or directory: 'nacl/src/crypto_onetimeauth_poly1305_ref/verify.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_verify_16_ref/verify.c -o nacl/src/crypto_verify_16_ref/verify.o
+clang: error: no such file or directory: 'nacl/src/crypto_verify_16_ref/verify.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_xsalsa20_ref/xor.c -o nacl/src/crypto_stream_xsalsa20_ref/xor.o
+clang: error: no such file or directory: 'nacl/src/crypto_stream_xsalsa20_ref/xor.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_xsalsa20_ref/stream.c -o nacl/src/crypto_stream_xsalsa20_ref/stream.o
+clang: error: no such file or directory: 'nacl/src/crypto_stream_xsalsa20_ref/stream.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_core_salsa20_ref/core.c -o nacl/src/crypto_core_salsa20_ref/core.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/xor.c -o nacl/src/crypto_stream_salsa20_ref/xor.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/stream.c -o nacl/src/crypto_stream_salsa20_ref/stream.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmlparse.c -o xmlparse.o
+xmlparse.c:1568:18: warning: implicit conversion from enumeration type 'enum XML_Status' to different enumeration type 'enum XML_Error' [-Wenum-conversion]
+        result = XML_STATUS_SUSPENDED;
+               ~ ^~~~~~~~~~~~~~~~~~~~
+./expat.h:51:30: note: expanded from macro 'XML_STATUS_SUSPENDED'
+#define XML_STATUS_SUSPENDED XML_STATUS_SUSPENDED
+                             ^~~~~~~~~~~~~~~~~~~~
+xmlparse.c:1578:18: warning: implicit conversion from enumeration type 'enum XML_Status' to different enumeration type 'enum XML_Error' [-Wenum-conversion]
+        rclang: error: no such file or directory: 'nacl/src/crypto_core_salsa20_ref/core.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/xor.c -o nacl/src/crypto_stream_salsa20_ref/xor.o
+clang: error: no such file or directory: 'nacl/src/crypto_stream_salsa20_ref/xor.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c nacl/src/crypto_stream_salsa20_ref/stream.c -o nacl/src/crypto_stream_salsa20_ref/stream.o
+clang: error: no such file or directory: 'nacl/src/crypto_stream_salsa20_ref/stream.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmlparse.c -o xmlparse.o
+clang: error: no such file or directory: 'xmlparse.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ xmlparse.c:1568:18: warning: implicit conversion from enumeration type 'enum XML_Status' to different enumeration type 'enum XML_Error' [-Wenum-conversion]
+-bash: xmlparse.c:1568:18:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$         result = XML_STATUS_SUSPENDED;
+-bash: result: command not found
+               ~ ^~~~~~~~~~~~~~~~~~~~
+./expat.h:51:30: note: expanded from macro 'XML_STATUS_SUSPENDED'
+#define XML_STATUS_SUSPENDED XML_STATUS_SUSPENDED
+                             ^~~~~~~~~~~~~~~~~~~~
+xmlparse.c:1578:18: warning: implicit conversion from enumeration type 'enum XML_Status' to different enumeration type 'enum XML_Error' [-Wenum-conversion]
+        result = XML_STATUS_OK;
+               ~ ^~~~~~~~~~~~~
+./expat.h:49:23: note: expanded from macro 'XML_STATUS_OK'
+#define XML_STATUS_OK XML_STATUS_OK
+                      ^~~~~~~~~~~~~
+xmlparse.c:1608:12: warning: implicit conversion from enumeration type 'enum XML_Error' to different enumeration type 'enum XML_Status' [-Wenum-conversion]
+    return result;
+    ~~~~~~ ^~~~~~
+3 warnings generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmlrole.c -o xmlrole.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok_impl.c -o xmltok_impl.o
+gcc -g -Wall -O3 -Iservals-MacBook-Pro-2:sd-test-data serval$                ~ ^~~~~~~~~~~~~~~~~~~~
+-bash: /Users/serval: is a directory
+servals-MacBook-Pro-2:sd-test-data serval$ ./expat.h:51:30: note: expanded from macro 'XML_STATUS_SUSPENDED'
+-bash: ./expat.h:51:30:: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ #define XML_STATUS_SUSPENDED XML_STATUS_SUSPENDED
+servals-MacBook-Pro-2:sd-test-data serval$                              ^~~~~~~~~~~~~~~~~~~~
+-bash: ^~~~~~~~~~~~~~~~~~~~: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xmlparse.c:1578:18: warning: implicit conversion from enumeration type 'enum XML_Status' to different enumeration type 'enum XML_Error' [-Wenum-conversion]
+-bash: xmlparse.c:1578:18:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$         result = XML_STATUS_OK;
+-bash: result: command not found
+servals-MacBook-Pro-2:sd-test-data serval$                ~ ^~~~~~~~~~~~~
+-bash: /Users/serval: is a directory
+servals-MacBook-Pro-2:sd-test-data serval$ ./expat.h:49:23: note: expanded from macro 'XML_STATUS_OK'
+-bash: ./expat.h:49:23:: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ #define XML_STATUS_OK XML_STATUS_OK
+servals-MacBook-Pro-2:sd-test-data serval$                       ^~~~~~~~~~~~~
+-bash: ^~~~~~~~~~~~~: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xmlparse.c:1608:12: warning: implicit conversion from enumeration type 'enum XML_Error' to different enumeration type 'enum XML_Status' [-Wenum-conversion]
+-bash: xmlparse.c:1608:12:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$     return result;
+-bash: return: result: numeric argument required
+-bash: return: can only `return' from a function or sourced script
+servals-MacBook-Pro-2:sd-test-data serval$     ~~~~~~ ^~~~~~
+3 warnings generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmlrole.c -o xmlrole.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok_impl.c -o xmltok_impl.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok_ns.c -o xmltok_ns.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok.c -o xmltok.o
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c timegm.c -o timegm.o
+gcc -g -Wall -o smac main.o smac.o recipe.o xml2recipe.o xhtml2recipe.o map.o dexml.o md5.o unicode.o case.o length.o lowercasealpha.o nonalpha.o packedascii.o packed_stats.o charset.o entropyutil.o arithmetic.o gsinterpolative.o visualise.o crypto.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o nacl/src/crypto_box_curve25-bash: ~~~~~~: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ 3 warnings generated.
+-bash: 3: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmlrole.c -o xmlrole.o
+clang: error: no such file or directory: 'xmlrole.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok_impl.c -o xmltok_impl.o
+clang: error: no such file or directory: 'xmltok_impl.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok_ns.c -o xmltok_ns.o
+clang: error: no such file or directory: 'xmltok_ns.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c xmltok.c -o xmltok.o
+clang: error: no such file or directory: 'xmltok.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c timegm.c -o timegm.o
+clang: error: no such file or directory: 'timegm.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -o smac main.o smac.o recipe.o xml2recipe.o xhtml2recipe.o map.o dexml.o md5.o unicode.o case.o length.o lowercasealpha.o nonalpha.o packedascii.o packed_stats.o charset.o entropyutil.o arithmetic.o gsinterpolative.o visualise.o crypto.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.o nacl/src/crypto_core_hsalsa20_ref/core.o nacl/src/crypto_scalarmult_curve25519_ref/base.o nacl/src/crypto_scalarmult_curve25519_ref/smult.o nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.o nacl/src/crypto_onetimeauth_poly1305_ref/auth.o nacl/src/crypto_onetimeauth_poly1305_ref/verify.o nacl/src/crypto_verify_16_ref/verify.o nacl/src/crypto_stream_xsalsa20_ref/xor.o nacl/src/crypto_stream_xsalsa20_ref/stream.o nacl/src/crypto_core_salsa20_ref/core.o nacl/src/crypto_stream_salsa20_ref/xor.o nacl/src/crypto_stream_salsa20_ref/stream.o xmlparse.o xmlrole.o xmltok_impl.o xmltok_ns.o xmltok.o timegm.o -lm
+clang: error: no such file or directory: 'main.o'
+clang: error: no such file or directory: 'smac.o'
+clang: error: no such file or directory: 'recipe.o'
+clang: error: no such file or directory: 'xml2recipe.o'
+clang: error: no such file or directory: 'xhtml2recipe.o'
+clang: error: no such file or directory: 'map.o'
+clang: error: no such file or directory: 'dexml.o'
+clang: error: no such file or directory: 'md5.o'
+clang: error: no such file or directory: 'unicode.o'
+clang: error: no such file or directory: 'case.o'
+clang: error: no such file or directory: 'length.o'
+clang: error: no such file or directory: 'lowercasealpha.o'
+clang: error: no such file or directory: 'nonalpha.o'
+clang: error: no such file or directory: 'packedascii.o'
+clang: error: no such file or directory: 'packed_stats.o'
+clang: error: no such file or directory: 'charset.o'
+clang: error: no such file or directory: 'entropyutil.o'
+clang: error: no such file or directory: 'arithmetic.o'
+clang: error: no such file or directory: 'gsinterpolative.o'
+clang: error: no such file or directory: 'visualise.o'
+clang: error: no such file or directory: 'crypto.o'
+clang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/keypair.o'
+clang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/before.o'
+clang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/after.o'
+clang: error: no such file or directory: 'nacl/src/crypto_box_curve25519xsalsa20poly1305_ref/box.o'
+clang: error: no such file or directory: 'nacl/src/crypto_core_hsalsa20_ref/core.o'
+clang: error: no such file or directory: 'nacl/src/crypto_scalarmult_curve25519_ref/base.o'
+clang: error: no such file or directory: 'nacl/src/crypto_scalarmult_curve25519_ref/smult.o'
+clang: error: no such file or directory: 'nacl/src/crypto_secretbox_xsalsa20poly1305_ref/box.o'
+clang: error: no such file or directory: 'nacl/src/crypto_onetimeauth_poly1305_ref/auth.o'
+clang: error: no such file or directory: 'nacl/src/crypto_onetimeauth_poly1305_ref/verify.o'
+clang: error: no such file or directory: 'nacl/src/crypto_verify_16_ref/verify.o'
+clang: error: no such file or directory: 'nacl/src/crypto_stream_xsalsa20_ref/xor.o'
+clang: error: no such file or directory: 'nacl/src/crypto_stream_xsalsa20_ref/stream.o'
+clang: error: no such file or directory: 'nacl/src/crypto_core_salsa20_ref/core.o'
+clang: error: no such file or directory: 'nacl/src/crypto_stream_salsa20_ref/xor.o'
+clang: error: no such file or directory: 'nacl/src/crypto_stream_salsa20_ref/stream.o'
+clang: error: no such file or directory: 'xmlparse.o'
+clang: error: no such file or directory: 'xmlrole.o'
+clang: error: no such file or directory: 'xmltok_impl.o'
+clang: error: no such file or directory: 'xmltok_ns.o'
+clang: error: no such file or directory: 'xmltok.o'
+clang: error: no such file or directory: 'timegm.o'
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1 -DTESTMODE -o arithmetic arithmetic.c
+clang: error: no such file or directory: 'arithmetic.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1  -c gen_stats.c -o gen_stats.o
+gen_stats.c:720:8: warning: unused variable 'codePage' [-Wunused-variable]
+  int *codePage=getUnicodeStatistics(h,0x0400/0x80);
+       ^
+1 warning generated.
+gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1 -o gen_stats gen_stats.o arithmetic.o packed_stats.o gsinterpolative.o charset.o unicode.o
+servals-MacBook-Pro-2:smac serval$ ./smac
+smac usage:
+  smac recipe <recipe sub-command>
+  smac babble
+  smac test <files>
+servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+servals-MacBook-Pro-2:sd-test-data serval$ ls
+compare		forms		makerecipe	records
+servals-MacBook-Pro-2:sd-test-data serval$ ls -la 
+total 16
+drwxr-xr-x    6 serval  staff   204 21 Apr 16:37 .
+drwxr-xr-x@ 100 serval  staff  3400 21 Apr 16:54 ..
+-rw-r--r--    1 serval  staff   871 21 Apr 16:37 compare
+drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 forms
+-rw-r--r--    1 serval  staff   751 21 Apr 16:37 makerecipe
+drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 records
+servals-MacBook-Pro-2:sd-teclang: error: no such file or directory: 'gen_stats.c'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ gen_stats.c:720:8: warning: unused variable 'codePage' [-Wunused-variable]
+-bash: gen_stats.c:720:8:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$   int *codePage=getUnicodeStatistics(h,0x0400/0x80);
+-bash: syntax error near unexpected token `('
+servals-MacBook-Pro-2:sd-test-data serval$        ^
+-bash: ^: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ 1 warning generated.
+-bash: 1: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ gcc -g -Wall -O3 -Inacl/include -std=gnu99 -I. -DHAVE_BCOPY=1 -DHAVE_MEMMOVE=1 -o gen_stats gen_stats.o arithmetic.o packed_stats.o gsinterpolative.o charset.o unicode.o
+clang: error: no such file or directory: 'gen_stats.o'
+clang: error: no such file or directory: 'arithmetic.o'
+clang: error: no such file or directory: 'packed_stats.o'
+clang: error: no such file or directory: 'gsinterpolative.o'
+clang: error: no such file or directory: 'charset.o'
+clang: error: no such file or directory: 'unicode.o'
+clang: error: no input files
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ ./smac
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ smac usage:
+-bash: smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$   smac recipe <recipe sub-command>
+-bash: syntax error near unexpected token `newline'
+servals-MacBook-Pro-2:sd-test-data serval$   smac babble
+-bash: smac: command not found
+  smac test <files>
+servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+servals-MacBook-Pro-2:sd-test-data serval$ ls
+compare		forms		makerecipe	records
+servals-MacBook-Pro-2:sd-test-data serval$ ls -la 
+total 16
+drwxr-xr-x    6 serval  staff   204 21 Apr 16:37 .
+drwxr-xr-x@ 100 serval  staff  3400 21 Apr 16:54 ..
+-rw-r--r--    1 serval  staff   871 21 Apr 16:37 compare
+drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 forms
+-rw-r--r--    1 serval  staff   751 21 Apr 16:37 makerecipe
+drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 records
+servals-MacBook-Pro-2:sd-test-data serval$ chmod 755 makerecipe 
+servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+rm: No match.
+cp: ../stats.dat: No such file or directory
+../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+.servals-MacBook-Pro-2:sd-test-data serval$   smac test <files>
+-bash: syntax error near unexpected token `newline'
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ ls
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ compareformsmakereciperecords
+-bash: compareformsmakereciperecords: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ ls -la 
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ total 16
+-bash: total: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ drwxr-xr-x    6 serval  staff   204 21 Apr 16:37 .
+-bash: drwxr-xr-x: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ drwxr-xr-x@ 100 serval  staff  3400 21 Apr 16:54 ..
+-bash: drwxr-xr-x@: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ -rw-r--r--    1 serval  staff   871 21 Apr 16:37 compare
+-bash: -rw-r--r--: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 forms
+-bash: drwxr-xr-x: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ -rw-r--r--    1 serval  staff   751 21 Apr 16:37 makerecipe
+-bash: -rw-r--r--: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ drwxr-xr-x   11 serval  staff   374 21 Apr 16:37 records
+-bash: drwxr-xr-x: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ chmod 755 makerecipe 
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ rm: No match.
+-bash: rm:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ cp: ../stats.dat: No such file or directory
+-bash: cp:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/01GoyPro_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/AllQuestions_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/AllQuestions_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+Segmentation fault
+../forms/nz_redcross_1a_people.xml
+Segmentation fault
+../forms/nz_redcross_1b_family_needs.xml
+Segmentation fault
+sd: No such file or directory.
+servals-MacBook-Pro-2:sd-test-data serval$ cd ..
+servals-MacBook-Pro-2:smac serval$ ls
+COPYING				dexml.c				length.c			packed_stats.o			visualise.o
+IJCSS-169.txt			dexml.o				length.o			packedascii.c			xhtml2recipe.c
+LIBEXPAT-NOTICE			entropyutil.c			lowercasealpha.c		packedascii.o			xhtml2recipe.o
+Makefile			entropyutil.o			lowercasealpha.o		recipe.c			xml2recipe.c
+README				expat.h				main.c				recipe.h			xml2recipe.o
+arithmetic			expat_external.h		main.o				recipe.o			xmlparse.c
+arithmetic.c			explore_parameters		map.c				results				xmlparse.o
+arithmetic.dSYM			extract_instance.c		map.o				sd-test-data			xmlrole.c
+arithmetic.h			extract_instance_with_library.c	md5.c				smac				xmlrole.h
+arithmetic.o			ex-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+-bash: ../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/nz_redcross_1a_people.xml
+-bash: ../forms/nz_redcross_1a_people.xml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/nz_redcross_1b_family_needs.xml
+-bash: ../forms/nz_redcross_1b_family_needs.xml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ sd: No such file or directory.
+-bash: sd:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ cd ..
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ ls
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ COPYINGdexml.clength.cpacked_stats.ovisualise.o
+-bash: COPYINGdexml.clength.cpacked_stats.ovisualise.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ IJCSS-169.txtdexml.olength.opackedascii.cxhtml2recipe.c
+-bash: IJCSS-169.txtdexml.olength.opackedascii.cxhtml2recipe.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ LIBEXPAT-NOTICEentropyutil.clowercasealpha.cpackedascii.oxhtml2recipe.o
+-bash: LIBEXPAT-NOTICEentropyutil.clowercasealpha.cpackedascii.oxhtml2recipe.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Makefileentropyutil.olowercasealpha.orecipe.cxml2recipe.c
+-bash: Makefileentropyutil.olowercasealpha.orecipe.cxml2recipe.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ READMEexpat.hmain.crecipe.hxml2recipe.o
+-bash: READMEexpat.hmain.crecipe.hxml2recipe.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ arithmeticexpat_external.hmain.orecipe.oxmlparse.c
+-bash: arithmeticexpat_external.hmain.orecipe.oxmlparse.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ arithmetic.cexplore_parametersmap.cresultsxmlparse.o
+-bash: arithmetic.cexplore_parametersmap.cresultsxmlparse.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ arithmetic.dSYMextract_instance.cmap.osd-test-dataxmlrole.c
+-bash: arithmetic.dSYMextract_instance.cmap.osd-test-dataxmlrole.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ arithmetic.hextract_instance_with_library.cmd5.csmacxmlrole.h
+-bash: arithmetic.hextract_instance_with_library.cmd5.csmacxmlrole.h: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ arithmetic.oextract_tweet_textmd5.hsmac.cxmlrole.o
+-bash: arithmetic.oextract_tweet_textmd5.hsmac.cxmlrole.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ascii.hextract_tweets.cmd5.osmac.hxmltok.c
+-bash: ascii.hextract_tweets.cmd5.osmac.hxmltok.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ asciitab.hgen_statsnaclsmac.oxmltok.h
+-bash: asciitab.hgen_statsnaclsmac.oxmltok.h: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ case.cgen_stats.cnametab.htimegm.cxmltok.o
+-bash: case.cgen_stats.cnametab.htimegm.cxmltok.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ case.ogen_stats.ononalpha.ctimegm.oxmltok_impl.c
+-bash: case.ogen_stats.ononalpha.ctimegm.oxmltok_impl.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ charset.cgsinterpolative.cnonalpha.ounicode.cxmltok_impl.h
+-bash: charset.cgsinterpolative.cnonalpha.ounicode.cxmltok_impl.h: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ charset.hgsinterpolative.onzrc.recipeunicode.hxmltok_impl.o
+-bash: charset.hgsinterpolative.onzrc.recipeunicode.hxmltok_impl.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ charset.oiasciitab.hnzrc.testunicode.oxmltok_ns.c
+-bash: charset.oiasciitab.hnzrc.testunicode.oxmltok_ns.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ comp_reportinternal.hodt-shellutf8tab.hxmltok_ns.o
+-bash: comp_reportinternal.hodt-shellutf8tab.hxmltok_ns.o: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ crypto.cjni.cpacked_stats.cvisualise.c
+-bash: crypto.cjni.cpacked_stats.cvisualise.c: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ crypto.olatin1tab.hpacked_stats.hvisualise.h
+-bash: crypto.olatin1tab.hpacked_stats.hvisualise.h: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ find .. -name stats.dat
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ find ../.. -name stats.dat
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ pwd
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ /Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac
+-bash: /Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac: is a directory
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ ls ../../assets/
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ smacsmac.dat
+-bash: smacsmac.dat: command not found
+servals-MacBook-Pro-2:smac serval$ cp ../../assets/smac.dat  stats.dat
+servals-MacBook-Pro-2:smac serval$ ./makerecipe 
+-bash: ./makerecipe: No such file or directory
+servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+rm: No match.
+cp: ../stats.dat: No such file or directory
+../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/AllQuestions_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+Segmentation fault
+../forms/nz_redcross_1a_people.xml
+Segmentation fault
+../forms/nz_redcross_1b_family_needs.xml
+Segmentatioservals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ cp ../../assets/smac.dat  stats.dat
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ ./makerecipe 
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ -bash: ./makerecipe: No such file or directory
+-bash: -bash:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:smac serval$ cd sd-test-data/
+-bash: servals-MacBook-Pro-2:smac: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ rm: No match.
+-bash: rm:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ cp: ../stats.dat: No such file or directory
+-bash: cp:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/01GoyPro_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+../forms/AllQuestions_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+Segmentation fault
+../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+Segmentation fault
+../forms/nz_redcross_1a_people.xml
+Segmentation fault
+../forms/nz_redcross_1b_family_needs.xml
+Segmentation fault
+sd: No such file or directory.
+servals-MacBook-Pro-2:sd-test-data serval$ pwd
+/Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac/sd-test-data
+servals-MacBook-Pro-2:sd-test-data serval$ ls -la ../stats.dat
+-rwxr-xr-x@ 1 serval  staff  1789018 21 Apr 16:56 ../stats.dat
+servals-MacBook-Pro-2:sd-test-data serval$ mv ../stats.dat .
+servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+rm: No match.
+../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statisticservals-MacBook-Pro-2:sd-test-data serval$ ../forms/AllQuestions_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/AllQuestions_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/Calculated-Logic_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/RDT_Subform_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml
+-bash: ../forms/WatSan_CI_B1_copy_SurveySpec_2015_04_09.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/nz_redcross_1a_people.xml
+-bash: ../forms/nz_redcross_1a_people.xml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/nz_redcross_1b_family_needs.xml
+-bash: ../forms/nz_redcross_1b_family_needs.xml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ Segmentation fault
+-bash: Segmentation: command not found
+sd: No such file or directory.
+servals-MacBook-Pro-2:sd-test-data serval$ pwd
+/Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac/sd-test-data
+servals-MacBook-Pro-2:sd-test-data serval$ ls -la ../stats.dat
+-rwxr-xr-x@ 1 serval  staff  1789018 21 Apr 16:56 ../stats.dat
+servals-MacBook-Pro-2:sd-test-data serval$ mv ../stats.dat .
+servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+rm: No match.
+../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field counties:select1
+Parsing field county_1_schools:select1
+Parsing field school1_details:string
+xhtml2recipeLen = 0
+Parsing field county_2_schools:select1
+Parsing field school2_details_copy:string
+xhtml2recipeLen = 1
+Parsing field county_3_schools:select1
+Parsing field school3_details:string
+xhtml2recipeLen = 2
+Parsing field county_4_schools:select1
+Parsing field school4_details:stservals-MacBook-Pro-2:sd-test-data serval$ sd: No such file or directory.
+-bash: sd:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ pwd
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ /Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac/sd-test-data
+-bash: /Users/serval/Downloads/survey-acquisition-management-succinct-data-r5-pgs/jni/smac/sd-test-data: is a directory
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ ls -la ../stats.dat
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ -rwxr-xr-x@ 1 serval  staff  1789018 21 Apr 16:56 ../stats.dat
+-bash: -rwxr-xr-x@: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ mv ../stats.dat .
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ servals-MacBook-Pro-2:sd-test-data serval$ ./makerecipe 
+-bash: servals-MacBook-Pro-2:sd-test-data: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ rm: No match.
+-bash: rm:: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/01GoyPro_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/01GoyPro_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+servals-MacBook-Pro-2:sd-test-data serval$ Read case and message length statistics.
+Parsing field counties:select1
+Parsing field county_1_schools:select1
+Parsing field school1_details:string
+xhtml2recipeLen = 0
+Parsing field county_2_schools:select1
+Parsing field school2_details_copy:string
+xhtml2recipeLen = 1
+Parsing field county_3_schools:select1
+Parsing field school3_details:string
+xhtml2recipeLen = 2
+Parsing field county_4_schools:select1
+Parsing field school4_details:string
+xhtml2recipeLen = 3
+Parsing field prompt__1397581086664:information
+xhtml2recipeLen = 4
+Found multiple-choice selection definition 'counties'
+Found multiple-choice selection definition 'county_1_schools'
+Found multiple-choice selection definition 'county_2_schools'
+Found multiple-choice selection definition 'county_3_schools'
+Found multiple-choice selection definition 'county_4_schools'
+
+
+Successfully parsed 9499 characters !
+xhtmlFormName=01GoyPro, xhtmlFormVersion=111055708
+Writing recipe to '111055708.recipe'
+Writing template to '111055708.template'
+../forms/1_KEN2surv_house_v15_Copy_2013/usr/bin/Read: line 4: read: `statistics.': not a valid identifier
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field county_1_schools:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field school1_details:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 0
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field county_2_schools:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field school2_details_copy:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 1
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field county_3_schools:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field school3_details:string
+-bash: Parsing: command not found
+xhtml2recipeLen = 2
+Parsing field county_4_schools:select1
+Parsing field school4_details:string
+xhtml2recipeLen = 3
+Parsing field prompt__1397581086664:information
+xhtml2recipeLen = 4
+Found multiple-choice selection definition 'counties'
+Found multiple-choice selection definition 'county_1_schools'
+Found multiple-choice selection definition 'county_2_schools'
+Found multiple-choice selection definition 'county_3_schools'
+Found multiple-choice selection definition 'county_4_schools'
+
+
+Successfully parsed 9499 characters !
+xhtmlFormName=01GoyPro, xhtmlFormVersion=111055708
+Writing recipe to '111055708.recipe'
+Writing template to '111055708.template'
+../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field KENYA_MANAGEMENT_SURVEY_JANUA:information
+xhtml2recipeLen = 0
+Parsing field interviewer:string
+xhtml2recipeLen = 1
+Parsiservals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 2
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field county_4_schools:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field school4_details:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 3
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1397581086664:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 4
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'counties'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'county_1_schools'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'county_2_schools'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'county_3_schools'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'county_4_schools'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ 
+servals-MacBook-Pro-2:sd-test-data serval$ 
+servals-MacBook-Pro-2:sd-test-data serval$ Successfully parsed 9499 characters !
+-bash: Successfully: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtmlFormName=01GoyPro, xhtmlFormVersion=111055708
+servals-MacBook-Pro-2:sd-test-data serval$ Writing recipe to '111055708.recipe'
+-bash: Writing: command not found
+Writing template to '111055708.template'
+../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field KENYA_MANAGEMENT_SURVEY_JANUA:information
+xhtml2recipeLen = 0
+Parsing field interviewer:string
+xhtml2recipeLen = 1
+Parsing field clusterid:integer
+Parsing INT field clusterid:integer
+clusterid:integer:1:30:0
+Parsing field hhid:integer
+Parsing INT field hhid:integer
+hhid:integer:1:15:0
+Parsing field gps:geopoint
+xhtml2recipeLen = 4
+Parsing field hhinterviewed_yn:select1
+Parsing field consent:select1
+Parsing field interview_start_time:integer
+Parsing INT field interview_start_time:integer
+interview_start_time:integer:0:2400:0
+Parsing field name_hhhead:string
+xhtml2recipeLen = 6
+Parsing field head_hh_school_yn:select1
+Parsing field head_hh_educ_highest:select1
+Parsing field num_km_to_facility:integer
+Parsing INT field num_km_servals-MacBook-Pro-2:sd-test-data serval$ Writing template to '111055708.template'
+-bash: Writing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ ../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+servals-MacBook-Pro-2:sd-test-data serval$ Read case and message length statistics.
+Parsing field KENYA_MANAGEMENT_SURVEY_JANUA:information
+xhtml2recipeLen = 0
+Parsing field interviewer:string
+xhtml2recipeLen = 1
+Parsing field clusterid:integer
+Parsing INT field clusterid:integer
+clusterid:integer:1:30:0
+Parsing field hhid:integer
+Parsing INT field hhid:integer
+hhid:integer:1:15:0
+Parsing field gps:geopoint
+xhtml2recipeLen = 4
+Parsing field hhinterviewed_yn:select1
+Parsing field consent:select1
+Parsing field interview_start_time:integer
+Parsing INT field interview_start_time:integer
+interview_start_time:integer:0:2400:0
+Parsing field name_hhhead:string
+xhtml2recipeLen = 6
+Parsing field head_hh_school_yn:select1
+Parsing field head_hh_educ_highest:select1
+Parsing field num_km_to_facility:integer
+Parsing INT field num_km_to_facility:integer
+Pars/usr/bin/Read: line 4: read: `statistics.': not a valid identifier
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 0
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field interviewer:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 1
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field clusterid:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field clusterid:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ clusterid:integer:1:30:0
+-bash: clusterid:integer:1:30:0: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field hhid:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field hhid:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ hhid:integer:1:15:0
+-bash: hhid:integer:1:15:0: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field gps:geopoint
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 4
+Parsing field hhinterviewed_yn:select1
+Parsing field consent:select1
+Parsing field interview_start_time:integer
+Parsing INT field interview_start_time:integer
+interview_start_time:integer:0:2400:0
+Parsing field name_hhhead:string
+xhtml2recipeLen = 6
+Parsing field head_hh_school_yn:select1
+Parsing field head_hh_educ_highest:select1
+Parsing field num_km_to_facility:integer
+Parsing INT field num_km_to_facility:integer
+Parsing field min_to_health_facility:integer
+Parsing INT field min_to_health_facility:integer
+Parsing field BEDNET_questions_follow_next:information
+xhtml2recipeLen = 9
+Parsing field totalpersons_lastnight:integer
+Parsing INT field totalpersons_lastnight:integer
+Parsing field totalpersons_usual:integer
+Parsing INT field totalpersons_usual:integer
+Parsing field numhhsleepingspaces_ln:integer
+Parsing INT field numhhsleepingspaces_ln:integer
+Parsing field numhhsleepingspaces_usual:integer
+Parsing INT field numhhsleepingspaces_usual:integer
+Parsing field nets_yn:select1
+Parsing -bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field hhinterviewed_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field consent:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field interview_start_time:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field interview_start_time:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ interview_start_time:integer:0:2400:0
+-bash: interview_start_time:integer:0:2400:0: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field name_hhhead:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 6
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field head_hh_school_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field head_hh_educ_highest:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field num_km_to_facility:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field num_km_to_facility:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field min_to_health_facility:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field min_to_health_facility:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field BEDNET_questions_follow_next:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 9
+-bash: xhtml2recipeLen: command not found
+Parsing field totalpersons_lastnight:integer
+Parsing INT field totalpersons_lastnight:integer
+Parsing field totalpersons_usual:integer
+Parsing INT field totalpersons_usual:integer
+Parsing field numhhsleepingspaces_ln:integer
+Parsing INT field numhhsleepingspaces_ln:integer
+Parsing field numhhsleepingspaces_usual:integer
+Parsing INT field numhhsleepingspaces_usual:integer
+Parsing field nets_yn:select1
+Parsing field nets_numberinhh:integer
+Parsing INT field nets_numberinhh:integer
+Parsing field net_holes_ever_yn:select1
+Parsing field net_holes_cause:selectn
+Parsing field net_holes_repaired_yn:select1
+Parsing field net_holes_repair_method:selectn
+Parsing field net_holes_notrepaired_reason:select1
+Parsing field net_holes_notrepaired_other:string
+xhtml2recipeLen = 15
+Parsing field net_holes_messages_yn:select1
+Parsing field net_holes_messages_where:selectn
+Parsing field visithomemalaria:select1
+Parsing field itn_netinfosource:select1
+Parsing field HOUSEHOLD_WEALTH_questions_fo:information
+xhservals-MacBook-Pro-2:sd-test-data serval$ Parsing field totalpersons_lastnight:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field totalpersons_lastnight:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field totalpersons_usual:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field totalpersons_usual:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field numhhsleepingspaces_ln:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field numhhsleepingspaces_ln:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field numhhsleepingspaces_usual:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field numhhsleepingspaces_usual:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field nets_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field nets_numberinhh:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field nets_numberinhh:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_ever_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_cause:selectn
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_repaired_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_repair_method:selectn
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_notrepaired_reason:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_notrepaired_other:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 15
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_messages_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field net_holes_messages_where:selectn
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field visithomemalaria:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field itn_netinfosource:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field HOUSEHOLD_WEALTH_questions_fo:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 16
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_hhwater:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field water_wheresource:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field water_howlong:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field water_howlong:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field water_whofetches:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field water_safedrink_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field water_makesafe:selectn
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field water_chlorine_type:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_hhtoilet:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field toilet_share:select1
+-bash: Parsing: command not found
+Parsing field wlth_toilet_numotherhholds:integer
+Parsing INT field wlth_toilet_numotherhholds:integer
+Parsing field wlth_hhcook:select1
+Parsing field wlth_hhfloor:select1
+Parsing field wlth_roof:select1
+Parsing field wlth_extwalls:select1
+Parsing field wlth_elect:select1
+Parsing field wlth_radio:select1
+Parsing field wlth_tv:select1
+Parsing field wlth_mobphone:select1
+Parsing field wlth_nonmobphone:select1
+Parsing field wlth_refridg:select1
+Parsing field wlth_watch:select1
+Parsing field wlth_bicycle:select1
+Parsing field wlth_motocyc:select1
+Parsing field wlth_animaldrawncart:select1
+Parsing field wlth_car:select1
+Parsing field wlth_boat_motor:select1
+Parsing field wlth_hhagland:select1
+Parsing field wlth_hectaresownland:integer
+Parsing INT field wlth_hectaresownland:integer
+Parsing field wlth_ownfarmanimals:select1
+Parsing field wlth_numcattle:integer
+Parsing INT field wlth_numcattle:integer
+Parsing field wlth_milkcowsbulls:integer
+Parsing INT field wlth_milkcowsbulls:integer
+Parsinservals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_toilet_numotherhholds:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_toilet_numotherhholds:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_hhcook:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_hhfloor:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_roof:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_extwalls:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_elect:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_radio:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_tv:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_mobphone:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_nonmobphone:select1
+-bash: Parsing: command not found
+Parsing field wlth_refridg:select1
+Parsing field wlth_watch:select1
+Parsing field wlth_bicycle:select1
+Parsing field wlth_motocyc:select1
+Parsing field wlth_animaldrawncart:select1
+Parsing field wlth_car:select1
+Parsing field wlth_boat_motor:select1
+Parsing field wlth_hhagland:select1
+Parsing field wlth_hectaresownland:integer
+Parsing INT field wlth_hectaresownland:integer
+Parsing field wlth_ownfarmanimals:select1
+Parsing field wlth_numcattle:integer
+Parsing INT field wlth_numcattle:integer
+Parsing field wlth_milkcowsbulls:integer
+Parsing INT field wlth_milkcowsbulls:integer
+Parsing field wlth_horsesdonkeysmules:integer
+Parsing INT field wlth_horsesdonkeysmules:integer
+Parsing field wlth_goats:integer
+Parsing INT field wlth_goats:integer
+Parsing field wlth_sheep:integer
+Parsing INT field wlth_sheep:integer
+Parsing field wlth_chickens:integer
+Parsing INT field wlth_chickens:integer
+Parsing field wlth_bankaccount:select1
+Parsing field Prompt1356176371311:information
+xhtml2recipeLen = 26servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_refridg:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_watch:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_bicycle:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_motocyc:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_animaldrawncart:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_car:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_boat_motor:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_hhagland:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_hectaresownland:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_hectaresownland:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_ownfarmanimals:select1
+-bash: Parsing: command not found
+Parsing field wlth_numcattle:integer
+Parsing INT field wlth_numcattle:integer
+Parsing field wlth_milkcowsbulls:integer
+Parsing INT field wlth_milkcowsbulls:integer
+Parsing field wlth_horsesdonkeysmules:integer
+Parsing INT field wlth_horsesdonkeysmules:integer
+Parsing field wlth_goats:integer
+Parsing INT field wlth_goats:integer
+Parsing field wlth_sheep:integer
+Parsing INT field wlth_sheep:integer
+Parsing field wlth_chickens:integer
+Parsing INT field wlth_chickens:integer
+Parsing field wlth_bankaccount:select1
+Parsing field Prompt1356176371311:information
+xhtml2recipeLen = 26
+Parsing field handwash_observe_yn:select1
+Parsing field handwash_station:select1
+Parsing field handwash_water_present:select1
+Parsing field handwash_cleaning_agent:select1
+Parsing field Prompt1358572577517:information
+xhtml2recipeLen = 27
+Parsing field chw_presence_yn:select1
+Parsing field Prompt1358622580042:information
+xhtml2recipeLen = 28
+Parsing field fevero5_last2weeks_num:integer
+Parsing INT field fevero5_laservals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_numcattle:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_numcattle:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_milkcowsbulls:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_milkcowsbulls:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_horsesdonkeysmules:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_horsesdonkeysmules:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_goats:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_goats:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_sheep:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_sheep:integer
+-bash: Parsing: command not found
+Parsing field wlth_chickens:integer
+Parsing INT field wlth_chickens:integer
+Parsing field wlth_bankaccount:select1
+Parsing field Prompt1356176371311:information
+xhtml2recipeLen = 26
+Parsing field handwash_observe_yn:select1
+Parsing field handwash_station:select1
+Parsing field handwash_water_present:select1
+Parsing field handwash_cleaning_agent:select1
+Parsing field Prompt1358572577517:information
+xhtml2recipeLen = 27
+Parsing field chw_presence_yn:select1
+Parsing field Prompt1358622580042:information
+xhtml2recipeLen = 28
+Parsing field fevero5_last2weeks_num:integer
+Parsing INT field fevero5_last2weeks_num:integer
+fevero5_last2weeks_num:integer:5:1004:0
+Parsing field fevero5_bloodtaken_num:integer
+Parsing INT field fevero5_bloodtaken_num:integer
+Parsing field This_portion_of_the_interview:information
+xhtml2recipeLen = 31
+Found multiple-choice selection definition 'hhinterviewed_yn'
+Found multiple-choice selection definition 'consent'
+Found multiple-choice selection definition 'head_hh_schservals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_chickens:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field wlth_chickens:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field wlth_bankaccount:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field Prompt1356176371311:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 26
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field handwash_observe_yn:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field handwash_station:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field handwash_water_present:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field handwash_cleaning_agent:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field Prompt1358572577517:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 27
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field chw_presence_yn:select1
+-bash: Parsing: command not found
+Parsing field Prompt1358622580042:information
+xhtml2recipeLen = 28
+Parsing field fevero5_last2weeks_num:integer
+Parsing INT field fevero5_last2weeks_num:integer
+fevero5_last2weeks_num:integer:5:1004:0
+Parsing field fevero5_bloodtaken_num:integer
+Parsing INT field fevero5_bloodtaken_num:integer
+Parsing field This_portion_of_the_interview:information
+xhtml2recipeLen = 31
+Found multiple-choice selection definition 'hhinterviewed_yn'
+Found multiple-choice selection definition 'consent'
+Found multiple-choice selection definition 'head_hh_school_yn'
+Found multiple-choice selection definition 'head_hh_educ_highest'
+Found multiple-choice selection definition 'nets_yn'
+Found multiple-choice selection definition 'net_holes_ever_yn'
+Found multiple-choice selection definition 'net_holes_cause'
+Found multiple-choice selection definition 'net_holes_repaired_yn'
+Found multiple-choice selection definition 'net_holes_repair_method'
+Found multiple-choice selection definition 'net_holes_notrepaired_reason'
+Foservals-MacBook-Pro-2:sd-test-data serval$ Parsing field Prompt1358622580042:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 28
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field fevero5_last2weeks_num:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field fevero5_last2weeks_num:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ fevero5_last2weeks_num:integer:5:1004:0
+-bash: fevero5_last2weeks_num:integer:5:1004:0: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field fevero5_bloodtaken_num:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field fevero5_bloodtaken_num:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field This_portion_of_the_interview:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 31
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'hhinterviewed_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'consent'
+-bash: Found: command not found
+Found multiple-choice selection definition 'head_hh_school_yn'
+Found multiple-choice selection definition 'head_hh_educ_highest'
+Found multiple-choice selection definition 'nets_yn'
+Found multiple-choice selection definition 'net_holes_ever_yn'
+Found multiple-choice selection definition 'net_holes_cause'
+Found multiple-choice selection definition 'net_holes_repaired_yn'
+Found multiple-choice selection definition 'net_holes_repair_method'
+Found multiple-choice selection definition 'net_holes_notrepaired_reason'
+Found multiple-choice selection definition 'net_holes_messages_yn'
+Found multiple-choice selection definition 'net_holes_messages_where'
+Found multiple-choice selection definition 'visithomemalaria'
+Found multiple-choice selection definition 'itn_netinfosource'
+Found multiple-choice selection definition 'wlth_hhwater'
+Found multiple-choice selection definition 'water_wheresource'
+Found multiple-choice selection definition 'water_whofetches'
+Found multiple-choice selection definition 'wateservals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'head_hh_school_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'head_hh_educ_highest'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'nets_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'net_holes_ever_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'net_holes_cause'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'net_holes_repaired_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'net_holes_repair_method'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'net_holes_notrepaired_reason'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'net_holes_messages_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'net_holes_messages_where'
+-bash: Found: command not found
+Found multiple-choice selection definition 'visithomemalaria'
+Found multiple-choice selection definition 'itn_netinfosource'
+Found multiple-choice selection definition 'wlth_hhwater'
+Found multiple-choice selection definition 'water_wheresource'
+Found multiple-choice selection definition 'water_whofetches'
+Found multiple-choice selection definition 'water_safedrink_yn'
+Found multiple-choice selection definition 'water_makesafe'
+Found multiple-choice selection definition 'water_chlorine_type'
+Found multiple-choice selection definition 'wlth_hhtoilet'
+Found multiple-choice selection definition 'toilet_share'
+Found multiple-choice selection definition 'wlth_hhcook'
+Found multiple-choice selection definition 'wlth_hhfloor'
+Found multiple-choice selection definition 'wlth_roof'
+Found multiple-choice selection definition 'wlth_extwalls'
+Found multiple-choice selection definition 'wlth_elect'
+Found multiple-choice selection definition 'wlth_radio'
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'visithomemalaria'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'itn_netinfosource'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_hhwater'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'water_wheresource'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'water_whofetches'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'water_safedrink_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'water_makesafe'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'water_chlorine_type'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_hhtoilet'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'toilet_share'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_hhcook'
+Found multiple-choice selection definition 'wlth_hhfloor'
+Found multiple-choice selection definition 'wlth_roof'
+Found multiple-choice selection definition 'wlth_extwalls'
+Found multiple-choice selection definition 'wlth_elect'
+Found multiple-choice selection definition 'wlth_radio'
+Found multiple-choice selection definition 'wlth_tv'
+Found multiple-choice selection definition 'wlth_mobphone'
+Found multiple-choice selection definition 'wlth_nonmobphone'
+Found multiple-choice selection definition 'wlth_refridg'
+Found multiple-choice selection definition 'wlth_watch'
+Found multiple-choice selection definition 'wlth_bicycle'
+Found multiple-choice selection definition 'wlth_motocyc'
+Found multiple-choice selection definition 'wlth_animaldrawncart'
+Found multiple-choice selection definition 'wlth_car'
+Found multiple-choice selection definition 'wlth_boat_motor'
+Found multiple-choice selection definition 'wlth_hhagland'
+Found multiple-choice selection definition 'wlth_ownfarmanimals'
+Found multiple-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_hhfloor'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_roof'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_extwalls'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_elect'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_radio'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_tv'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_mobphone'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_nonmobphone'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_refridg'
+-bash: Found: command not found
+Found multiple-choice selection definition 'wlth_watch'
+Found multiple-choice selection definition 'wlth_bicycle'
+Found multiple-choice selection definition 'wlth_motocyc'
+Found multiple-choice selection definition 'wlth_animaldrawncart'
+Found multiple-choice selection definition 'wlth_car'
+Found multiple-choice selection definition 'wlth_boat_motor'
+Found multiple-choice selection definition 'wlth_hhagland'
+Found multiple-choice selection definition 'wlth_ownfarmanimals'
+Found multiple-choice selection definition 'wlth_bankaccount'
+Found multiple-choice selection definition 'handwash_observe_yn'
+Found multiple-choice selection definition 'handwash_station'
+Found multiple-choice selection definition 'handwash_water_present'
+Found multiple-choice selection definition 'handwash_cleaning_agent'
+Found multiple-choice selection definition 'chw_presence_yn'
+
+
+Successfully parsed 74659 characters !
+xhtmlFormName=1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05, xhtmlFormVersion=27251
+Writing recipe toservals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_watch'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_bicycle'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_motocyc'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_animaldrawncart'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_car'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_boat_motor'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_hhagland'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_ownfarmanimals'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'wlth_bankaccount'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'handwash_observe_yn'
+-bash: Found: command not found
+Found multiple-choice selection definition 'handwash_station'
+Found multiple-choice selection definition 'handwash_water_present'
+Found multiple-choice selection definition 'handwash_cleaning_agent'
+Found multiple-choice selection definition 'chw_presence_yn'
+
+
+Successfully parsed 74659 characters !
+xhtmlFormName=1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05, xhtmlFormVersion=27251
+Writing recipe to '27251.recipe'
+Writing template to '27251.template'
+../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field prompt__1405349618864:information
+xhtml2recipeLen = 0
+Parsing field c2:select1
+Parsing field c2a:integer
+Parsing INT field c2a:integer
+c2a:integer:2:1001:0
+Parsing field c3:select1
+Parsing field C_4a:select1
+Parsing field C_4b:select1
+Parsing field C_4c:select1
+Parsing field C4d:select1
+Parsing field C_4e:selectservals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'handwash_station'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'handwash_water_present'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'handwash_cleaning_agent'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Found multiple-choice selection definition 'chw_presence_yn'
+-bash: Found: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ 
+servals-MacBook-Pro-2:sd-test-data serval$ 
+servals-MacBook-Pro-2:sd-test-data serval$ Successfully parsed 74659 characters !
+-bash: Successfully: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtmlFormName=1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05, xhtmlFormVersion=27251
+servals-MacBook-Pro-2:sd-test-data serval$ Writing recipe to '27251.recipe'
+-bash: Writing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Writing template to '27251.template'
+-bash: Writing: command not found
+../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+Read case and message length statistics.
+Parsing field prompt__1405349618864:information
+xhtml2recipeLen = 0
+Parsing field c2:select1
+Parsing field c2a:integer
+Parsing INT field c2a:integer
+c2a:integer:2:1001:0
+Parsing field c3:select1
+Parsing field C_4a:select1
+Parsing field C_4b:select1
+Parsing field C_4c:select1
+Parsing field C4d:select1
+Parsing field C_4e:select1
+Parsing field C_4f:select1
+Parsing field C_4g:select1
+Parsing field C_4h:select1
+Parsing field C_4i:select1
+Parsing field C_4j:select1
+Parsing field c5:string
+xhtml2recipeLen = 2
+Parsing field c5a:integer
+Parsing INT field c5a:integer
+c5a:integer:5:1004:0
+Parsing field c6:string
+xhtml2recipeLen = 4
+Parsing field c6a:integer
+Parsing INT field c6a:integer
+Parsing field c7a:select1
+Parsing field c7b:select1
+Parsing field c7:select1
+Parsing fielservals-MacBook-Pro-2:sd-test-data serval$ ../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml
+-bash: ../forms/ACTwatch_outlet_survey_copy_Copy_2014_08_07_20_25_33_SurveySpec_2015_04_14.xhtml: No such file or directory
+servals-MacBook-Pro-2:sd-test-data serval$ rootNodeAddress=0x1aa84a, totalCount=16777117, unicodeAddress=0x1b4abf, maximumOrder=5
+servals-MacBook-Pro-2:sd-test-data serval$ Read case and message length statistics.
+Parsing field prompt__1405349618864:information
+xhtml2recipeLen = 0
+Parsing field c2:select1
+Parsing field c2a:integer
+Parsing INT field c2a:integer
+c2a:integer:2:1001:0
+Parsing field c3:select1
+Parsing field C_4a:select1
+Parsing field C_4b:select1
+Parsing field C_4c:select1
+Parsing field C4d:select1
+Parsing field C_4e:select1
+Parsing field C_4f:select1
+Parsing field C_4g:select1
+Parsing field C_4h:select1
+Parsing field C_4i:select1
+Parsing field C_4j:select1
+Parsing field c5:string
+xhtml2recipeLen = 2
+Parsing field c5a:integer
+Parsing INT field c5a:integer
+c5a:integer:5:1004:0
+Parsing field c6:string
+xhtml2recipeLen = 4
+Parsing field c6a:integer
+Parsing INT field c6a:integer
+Parsing field c7a:select1
+Parsing field c7b:select1
+Parsing field c7:select1
+Parsing field c8:select1
+Parsing field out/usr/bin/Read: line 4: read: `statistics.': not a valid identifier
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 0
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c2:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c2a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field c2a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ c2a:integer:2:1001:0
+-bash: c2a:integer:2:1001:0: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c3:select1
+-bash: Parsing: command not found
+Parsing field C_4a:select1
+Parsing field C_4b:select1
+Parsing field C_4c:select1
+Parsing field C4d:select1
+Parsing field C_4e:select1
+Parsing field C_4f:select1
+Parsing field C_4g:select1
+Parsing field C_4h:select1
+Parsing field C_4i:select1
+Parsing field C_4j:select1
+Parsing field c5:string
+xhtml2recipeLen = 2
+Parsing field c5a:integer
+Parsing INT field c5a:integer
+c5a:integer:5:1004:0
+Parsing field c6:string
+xhtml2recipeLen = 4
+Parsing field c6a:integer
+Parsing INT field c6a:integer
+Parsing field c7a:select1
+Parsing field c7b:select1
+Parsing field c7:select1
+Parsing field c8:select1
+Parsing field outletid:string
+xhtml2recipeLen = 6
+Parsing field prompt__1405349725398:information
+xhtml2recipeLen = 7
+Parsing field Consent:select1
+Parsing field prompt__1405349801521:information
+xhtml2recipeLen = 8
+Parsing field S1:select1
+Parsing field S2:select1
+Parsing field s3:select1
+Parsing field s4:select1
+Parsing field s5:select1
+Parsing field s6:select1
+Parsing field prompt__14053593servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4a:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4b:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4c:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C4d:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4e:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4f:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4g:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4h:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4i:select1
+-bash: Parsing: command not found
+Parsing field C_4j:select1
+Parsing field c5:string
+xhtml2recipeLen = 2
+Parsing field c5a:integer
+Parsing INT field c5a:integer
+c5a:integer:5:1004:0
+Parsing field c6:string
+xhtml2recipeLen = 4
+Parsing field c6a:integer
+Parsing INT field c6a:integer
+Parsing field c7a:select1
+Parsing field c7b:select1
+Parsing field c7:select1
+Parsing field c8:select1
+Parsing field outletid:string
+xhtml2recipeLen = 6
+Parsing field prompt__1405349725398:information
+xhtml2recipeLen = 7
+Parsing field Consent:select1
+Parsing field prompt__1405349801521:information
+xhtml2recipeLen = 8
+Parsing field S1:select1
+Parsing field S2:select1
+Parsing field s3:select1
+Parsing field s4:select1
+Parsing field s5:select1
+Parsing field s6:select1
+Parsing field prompt__1405359385565:information
+xhtml2recipeLen = 9
+Parsing field concent:select1
+Parsing field prompt__1405359385565_copy:information
+xhtml2recipeLen = 10
+Parsing field prompt__1405359385565_copy_copy:information
+xhtml2recipeLen = 11
+Parsing field prompt__1servals-MacBook-Pro-2:sd-test-data serval$ Parsing field C_4j:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c5:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 2
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c5a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field c5a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ c5a:integer:5:1004:0
+-bash: c5a:integer:5:1004:0: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c6:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 4
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c6a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field c6a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c7a:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c7b:select1
+-bash: Parsing: command not found
+Parsing field c7:select1
+Parsing field c8:select1
+Parsing field outletid:string
+xhtml2recipeLen = 6
+Parsing field prompt__1405349725398:information
+xhtml2recipeLen = 7
+Parsing field Consent:select1
+Parsing field prompt__1405349801521:information
+xhtml2recipeLen = 8
+Parsing field S1:select1
+Parsing field S2:select1
+Parsing field s3:select1
+Parsing field s4:select1
+Parsing field s5:select1
+Parsing field s6:select1
+Parsing field prompt__1405359385565:information
+xhtml2recipeLen = 9
+Parsing field concent:select1
+Parsing field prompt__1405359385565_copy:information
+xhtml2recipeLen = 10
+Parsing field prompt__1405359385565_copy_copy:information
+xhtml2recipeLen = 11
+Parsing field prompt__1405359447234:information
+xhtml2recipeLen = 12
+Parsing field prompt__1405359678050:information
+xhtml2recipeLen = 13
+Parsing field Antimalarials_Audit:subform
+xhtml2recipeLen = 14
+Parsing field prompt__1406606190937:information
+xhtml2recipeLen = 15
+Parsing field am_num:integer
+Parsing INT field am_num:inservals-MacBook-Pro-2:sd-test-data serval$ Parsing field c7:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field c8:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field outletid:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 6
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405349725398:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 7
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field Consent:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405349801521:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 8
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field S1:select1
+-bash: Parsing: command not found
+Parsing field S2:select1
+Parsing field s3:select1
+Parsing field s4:select1
+Parsing field s5:select1
+Parsing field s6:select1
+Parsing field prompt__1405359385565:information
+xhtml2recipeLen = 9
+Parsing field concent:select1
+Parsing field prompt__1405359385565_copy:information
+xhtml2recipeLen = 10
+Parsing field prompt__1405359385565_copy_copy:information
+xhtml2recipeLen = 11
+Parsing field prompt__1405359447234:information
+xhtml2recipeLen = 12
+Parsing field prompt__1405359678050:information
+xhtml2recipeLen = 13
+Parsing field Antimalarials_Audit:subform
+xhtml2recipeLen = 14
+Parsing field prompt__1406606190937:information
+xhtml2recipeLen = 15
+Parsing field am_num:integer
+Parsing INT field am_num:integer
+Parsing field am_outlet:select1
+Parsing field sub_outlet_code:string
+xhtml2recipeLen = 17
+Parsing field a3:select1
+Parsing field prompt__1405954914773:information
+xhtml2recipeLen = 18
+Parsing field prompt__1406325467158:information
+xhtml2recipeLen = 19
+Parsing field aiGeneric_a:select1servals-MacBook-Pro-2:sd-test-data serval$ Parsing field S2:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field s3:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field s4:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field s5:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field s6:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405359385565:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 9
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field concent:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405359385565_copy:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 10
+-bash: xhtml2recipeLen: command not found
+Parsing field prompt__1405359385565_copy_copy:information
+xhtml2recipeLen = 11
+Parsing field prompt__1405359447234:information
+xhtml2recipeLen = 12
+Parsing field prompt__1405359678050:information
+xhtml2recipeLen = 13
+Parsing field Antimalarials_Audit:subform
+xhtml2recipeLen = 14
+Parsing field prompt__1406606190937:information
+xhtml2recipeLen = 15
+Parsing field am_num:integer
+Parsing INT field am_num:integer
+Parsing field am_outlet:select1
+Parsing field sub_outlet_code:string
+xhtml2recipeLen = 17
+Parsing field a3:select1
+Parsing field prompt__1405954914773:information
+xhtml2recipeLen = 18
+Parsing field prompt__1406325467158:information
+xhtml2recipeLen = 19
+Parsing field aiGeneric_a:select1
+Parsing field aiGeneric_a_other:string
+xhtml2recipeLen = 20
+Parsing field tsg_2a1:integer
+Parsing INT field tsg_2a1:integer
+Parsing field nt_2a1:integer
+Parsing INT field nt_2a1:integer
+Parsing field excip_a:integer
+Parsing INT field excip_a:integer
+Parsing field salt_a:string
+xhtml2recipeLen = servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405359385565_copy_copy:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 11
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405359447234:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 12
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405359678050:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 13
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field Antimalarials_Audit:subform
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 14
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1406606190937:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 15
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field am_num:integer
+-bash: Parsing: command not found
+Parsing INT field am_num:integer
+Parsing field am_outlet:select1
+Parsing field sub_outlet_code:string
+xhtml2recipeLen = 17
+Parsing field a3:select1
+Parsing field prompt__1405954914773:information
+xhtml2recipeLen = 18
+Parsing field prompt__1406325467158:information
+xhtml2recipeLen = 19
+Parsing field aiGeneric_a:select1
+Parsing field aiGeneric_a_other:string
+xhtml2recipeLen = 20
+Parsing field tsg_2a1:integer
+Parsing INT field tsg_2a1:integer
+Parsing field nt_2a1:integer
+Parsing INT field nt_2a1:integer
+Parsing field excip_a:integer
+Parsing INT field excip_a:integer
+Parsing field salt_a:string
+xhtml2recipeLen = 24
+Parsing field ct_a:select1
+Parsing field aiGeneric_b:select1
+Parsing field aiGeneric_b_other:string
+xhtml2recipeLen = 25
+Parsing field tsg_2b1:integer
+Parsing INT field tsg_2b1:integer
+Parsing field nt_2b1:integer
+Parsing INT field nt_2b1:integer
+Parsing field excip_b:integer
+Parsing INT field excip_b:integer
+Parsing field salt_b:string
+xhtml2recipeLen = 29
+Parsing fieldservals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field am_num:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field am_outlet:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field sub_outlet_code:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 17
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field a3:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1405954914773:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 18
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field prompt__1406325467158:information
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 19
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field aiGeneric_a:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field aiGeneric_a_other:string
+-bash: Parsing: command not found
+xhtml2recipeLen = 20
+Parsing field tsg_2a1:integer
+Parsing INT field tsg_2a1:integer
+Parsing field nt_2a1:integer
+Parsing INT field nt_2a1:integer
+Parsing field excip_a:integer
+Parsing INT field excip_a:integer
+Parsing field salt_a:string
+xhtml2recipeLen = 24
+Parsing field ct_a:select1
+Parsing field aiGeneric_b:select1
+Parsing field aiGeneric_b_other:string
+xhtml2recipeLen = 25
+Parsing field tsg_2b1:integer
+Parsing INT field tsg_2b1:integer
+Parsing field nt_2b1:integer
+Parsing INT field nt_2b1:integer
+Parsing field excip_b:integer
+Parsing INT field excip_b:integer
+Parsing field salt_b:string
+xhtml2recipeLen = 29
+Parsing field ct_b:select1
+Parsing field aiGeneric_c:select1
+Parsing field aiGeneric_c_other:string
+xhtml2recipeLen = 30
+Parsing field tsg_2c1:integer
+Parsing INT field tsg_2c1:integer
+Parsing field nt_2c1:integer
+Parsing INT field nt_2c1:integer
+Parsing field excip_c:integer
+Parsing INT field excip_c:integer
+Parsing field salt_c:string
+xhtml2recipeLen = 34
+Parsing fieservals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 20
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field tsg_2a1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field tsg_2a1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field nt_2a1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field nt_2a1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field excip_a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field excip_a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field salt_a:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 24
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field ct_a:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field aiGeneric_b:select1
+Parsing field aiGeneric_b_other:string
+xhtml2recipeLen = 25
+Parsing field tsg_2b1:integer
+Parsing INT field tsg_2b1:integer
+Parsing field nt_2b1:integer
+Parsing INT field nt_2b1:integer
+Parsing field excip_b:integer
+Parsing INT field excip_b:integer
+Parsing field salt_b:string
+xhtml2recipeLen = 29
+Parsing field ct_b:select1
+Parsing field aiGeneric_c:select1
+Parsing field aiGeneric_c_other:string
+xhtml2recipeLen = 30
+Parsing field tsg_2c1:integer
+Parsing INT field tsg_2c1:integer
+Parsing field nt_2c1:integer
+Parsing INT field nt_2c1:integer
+Parsing field excip_c:integer
+Parsing INT field excip_c:integer
+Parsing field salt_c:string
+xhtml2recipeLen = 34
+Parsing field amBrand:string
+xhtml2recipeLen = 35
+Parsing field a5:string
+xhtml2recipeLen = 36
+Parsing field a6:string
+xhtml2recipeLen = 37
+Parsing field a7b:select1
+Parsing field tsg1_7a:integer
+Parsing INT field tsg1_7a:integer
+Parsing field tsg2_7a:integer
+Parsing INT field tsg2_7a:integer
+Parsing field tsg_8:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field aiGeneric_b_other:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 25
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field tsg_2b1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field tsg_2b1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field nt_2b1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field nt_2b1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field excip_b:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field excip_b:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field salt_b:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 29
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field ct_b:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field aiGeneric_c:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field aiGeneric_c_other:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 30
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field tsg_2c1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field tsg_2c1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field nt_2c1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field nt_2c1:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field excip_c:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field excip_c:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field salt_c:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 34
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field amBrand:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 35
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field a5:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 36
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field a6:string
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ xhtml2recipeLen = 37
+-bash: xhtml2recipeLen: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field a7b:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field tsg1_7a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field tsg1_7a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field tsg2_7a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing INT field tsg2_7a:integer
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ Parsing field tsg_8:select1
+-bash: Parsing: command not found
+servals-MacBook-Pro-2:sd-test-data serval$ 

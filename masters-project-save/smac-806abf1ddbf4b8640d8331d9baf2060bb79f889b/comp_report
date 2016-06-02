@@ -1,0 +1,9 @@
+#!/bin/tcsh -f
+
+echo ">>> COMBINED corpora"
+   ./method_stats3 twitter_corpus*.txt
+
+foreach corpus ( twitter_corpus*.txt )
+   echo ">>>> $corpus"
+   ./method_stats3 $corpus
+end
