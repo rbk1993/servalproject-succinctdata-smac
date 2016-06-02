@@ -62,7 +62,7 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
     		record_count[record_number]++;
     		state_in_subform_record=1;
     	}
-    } else if(stripped[i]=='}') { //Found an opening bracket
+    } else if(stripped[i]=='}') { //Found a closing bracket
 
     printf("Found closing bracket ! \n");
 
@@ -193,10 +193,12 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
 			if((record_count[record_number_field[j]] - number_of_records_written) == 1) {
 				remaining_records = 0;
 			}
-			//Empty the fieldname because we already wrote it in the XML
-			//Thus, the strcasecmp between field and fieldnames[j] will find the other record fieldnames
-			fieldnames[j]="";
 		}
+		//Empty the fieldname because we already wrote it in the XML
+		//Thus, the strcasecmp between field and fieldnames[j]
+		//will find the other record fieldnames if the fields have the same name
+		//for example "uuid" or fieldnames in the records of a same subform
+		fieldnames[j]="";
 	    break;
 	  }
 	state_field=0;
@@ -327,7 +329,7 @@ int xml2stripped(const char *form_name, const char *xml,int xml_len,
 	  {
 		  //we reached the end of the subform
 	  	  in_subform--;
-	  	  printf("Test-Dialog / dexml.c : Reached end of subform ! Tag = &s \n",tag);
+	  	  printf("Test-Dialog / dexml.c : Reached end of subform ! Tag = %s \n",tag);
 			int b=snprintf(&stripped[stripped_ofs],stripped_size-stripped_ofs,"}\n");
 			if (b>0) stripped_ofs+=b;
 	  }

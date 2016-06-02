@@ -40,25 +40,27 @@
 #define MAXCHARS 1000000
 
 typedef struct node_recipe {
-	int recipeLen;
-	char formname[1024];
-	char formversion[1024];
-	char recipetext[65536];
-	char *xhtml2recipe[1024];
-	int xhtml2recipeLen;
-	char *selects[1024];
-	int xhtmlSelectsLen;
+	bool is_subform_node; //false if it's a subform recipe, true if not
+	int recipeLen; //Length of the recipe
+	char formname[1024]; //Form name
+	char formversion[1024]; //Form ID/version
+	char recipetext[65536]; //Text of the recipe
+	char *xhtml2recipe[1024]; //Temporary buffer to parse the recipe binds
+	int xhtml2recipeLen; //Length of xhtml2recipe
+	char *selects[1024]; //Temporary buffer to parse the recipe selects
+	int xhtmlSelectsLen; //Length of xhtmlSelectsLen
 	struct node_recipe *next;
 }recipe_node;
 
 typedef struct node_tag {
-	char tagname[1024];
-	char formversion[1024];
+	char tagname[1024]; //Name of the tag (question on the form)
+	char formversion[1024]; //Form version of the parent form of the tag
 	struct node_tag *next;
 }tag_node;
 
 typedef struct node_subform {
-	char subformid[1024];
+	char subformid[1024]; //ID of the subform
+	//char* nodeset;
 	struct node_subform *next;
 	struct node_subform *prev;
 }subform_node;
@@ -93,6 +95,12 @@ char *implied_meta_fields =
   "uuid:magpiuuid:0:0:0\n"
   "latitude:float:-90:90:0\n"
   "longitude:float:-200:200:0\n";
+
+char *implied_meta_fields_subforms =
+	"formid:string:0:0:0\n"
+	"question:string:0:0:0\n"
+	"uuid:magpiuuid:0:0:0\n";
+
 char *implied_meta_fields_template =
   "<userid>$userid$</userid>\n"
   "<accesstoken>$accesstoken$</accesstoken>\n"
@@ -159,25 +167,33 @@ void
 start_xhtml(void *data, const char *el, const char **attr) //This function is called  by the XML library each time it sees a new tag 
 {   
 
-  char    *node_name = "", *node_type = "", *node_constraint = "", *str = "";
+  char    *node_name = "", *node_type = "", *node_constraint = "";
+  char	  *str = "", *form_concat = "", *temp_type = "";
+
   int     i ;
+  int     k ;
   //Only to debug : Print each element
   //printf("(start_xhtml) element is: %s \n",el);
   
   if(attr[0]&&!strcmp(attr[0],"dd:formid")) {
 	  add_to_list_recipes(attr[1], true);
+	  curr_r->is_subform_node = false;
 	  add_to_list_subforms(attr[1]);
 	  printf("(start_xhtml) Form start ! : attr[0] = %s, curr_s -> formversion = %s \n",attr[0],curr_s->subformid);
   }
 
   if (xhtml_in_instance) { // We are between <instance> tags, so we want to get everything to create template file
 
+
 		  if(attr[0]&&!strcmp(attr[0],"dd:subformid")) {
 
 			    //linked lists stuff to structure well the data
 			    add_to_list_recipes(attr[1], true);
-
+			    curr_r->is_subform_node = true;
 			    add_to_list_subforms(attr[1]);
+			    add_to_list_tags(el,attr[1],true);
+			    //strcat(curr_s->nodeset,el);
+
 		  	  	xhtml_in_subform++; //xhtml_in_subform represents the depth in subforms
 		  	  	subform_tags[xhtml_in_subform] = (char *)el;
 		  	  	printf("(start_xhtml) subform instance start ! : attr[0] = %s , curr_s -> formversion = %s \n",attr[0],curr_s->subformid);
@@ -231,7 +247,15 @@ start_xhtml(void *data, const char *el, const char **attr) //This function is ca
 	    //find the subform where this field is in
 	    curr_t = search_in_list_tags(node_name,NULL);
 
-	    if(curr_t != NULL) {
+	      for (k = 0; attr[k]; k += 2) //look for type attribute
+		{
+	    	  if(!strncasecmp("type",attr[k],strlen("type"))) {
+	    		  printf("found temp type !! Temp type = %s \n",attr[k+1]);
+	    		  temp_type = strdup(attr[k+1]);
+	    	  }
+		}
+
+	    if(curr_t != NULL && strcasecmp(temp_type,"xsd:subform")) {
 	    	//use the right recipe node in the linked list to parse info
 	    	curr_r = search_in_list_recipes(curr_t->formversion,NULL);
 	    }
@@ -248,7 +272,15 @@ start_xhtml(void *data, const char *el, const char **attr) //This function is ca
 	    } else if (!strcasecmp(attr[i+1],"xsd:checkbox")) {
 	      // ... and checkbox (which is like radio, but allows multiple selections)
 	      node_type = strdup("selectn");
-	    } else {
+	    } else if (!strcasecmp(attr[i+1],"xsd:subform")) {
+		      // ... and subforms
+	  	  	  form_concat = calloc (4096, sizeof(char*));
+	  	  	  strcpy (form_concat, "subform_");
+	  	  	  strcat (form_concat, curr_t->formversion);
+	  	  	  node_type = strdup(form_concat);
+	    	  //node_type = strdup("subform");
+	    }
+	    else {
 	      const char *attribute=attr[i+1];
 	      // Skip "XXX:" prefixes on types
 	      if (strstr(attribute,":")) attribute=strstr(attribute,":")+1;
@@ -321,7 +353,11 @@ start_xhtml(void *data, const char *el, const char **attr) //This function is ca
 	  }
 	  curr_r->xhtml2recipeLen++;
 	}
-      else if (strcasecmp(node_type,"binary")) // All others type except binary (ignore binary fields in succinct data)
+      else if (strcasecmp(node_type,"binary")/*&&strcasecmp(node_type,"subform")*/)
+    	  // All others type except binary (ignore binary fields in succinct data)
+    	  // We don't write subform binds,
+    	  // the link between a form and its included subforms is easily made in the stripped file
+    	  // We actually need to write it because the decompressor uses it
         {
 	  if (!strcasecmp(node_name,"instanceID")) {
 	    snprintf(temp,1024,"%s:uuid",node_name);
@@ -341,6 +377,7 @@ start_xhtml(void *data, const char *el, const char **attr) //This function is ca
 	  printf("HIHIHIcurr_r->xhtml2recipe =%s \n",curr_r->xhtml2recipe[curr_r->xhtml2recipeLen]);
 	  curr_r->xhtml2recipeLen++;
 	}
+
     }
 
   //.recipe
@@ -436,14 +473,18 @@ void end_xhtml(void *data, const char *el) //This function is called  by the XML
     xhtml_in_instance = 0;
   }
     
-  if (xhtml_in_instance
-      && subform_tags[xhtml_in_subform]
-      && !strcasecmp(subform_tags[xhtml_in_subform],el)) { // We are between <instance> tags, we want to get everything
-    str = calloc (4096, sizeof(char*));
-    strcpy (str, "</");
-    strcat (str, el);
-    strcat (str, ">\n");
-    xhtml2template[xhtml2templateLen++] = str;
+  if (	  (xhtml_in_instance&&xhtml_in_subform == 0)
+		  ||
+		  (xhtml_in_subform>0&&strcasecmp(subform_tags[xhtml_in_subform],el))
+     )
+  {
+
+	  printf("Subform end ! don't write the element in the template \n");
+	  str = calloc (4096, sizeof(char*));
+	  strcpy (str, "</");
+	  strcat (str, el);
+	  strcat (str, ">\n");
+  	  xhtml2template[xhtml2templateLen++] = str;
   }
 
   if(xhtml_in_subform && !strcasecmp(subform_tags[xhtml_in_subform],el)) {
@@ -573,21 +614,25 @@ int xhtmlToRecipe(char *xmltext,int size,
 	    curr_r->recipeLen=0;
 
 	    // Start with implied fields
-	    strcpy(curr_r->recipetext,implied_meta_fields);
+	    if(curr_r->is_subform_node == false) {
+	    	strcpy(curr_r->recipetext,implied_meta_fields);
+	    } else {
+	    	strcpy(curr_r->recipetext,implied_meta_fields_subforms);
+	    }
 	    curr_r->recipeLen=strlen(curr_r->recipetext);
 
-	    printf("###CURRENT RECIPELEN = %d \n",curr_r->recipeLen);
+	    //printf("###CURRENT RECIPELEN = %d \n",curr_r->recipeLen);
 
 	    // Now add explicit fields
 	    for(i=0;i<curr_r->xhtml2recipeLen;i++){
 
-	      printf("####CURRENT RECIPENODE XHTML2RECIPE: %s \n",curr_r->xhtml2recipe[i]);
+	      //printf("####CURRENT RECIPENODE XHTML2RECIPE: %s \n",curr_r->xhtml2recipe[i]);
 	      if (appendto(curr_r->recipetext,&(curr_r->recipeLen),recipeMaxLen,curr_r->xhtml2recipe[i])) {
 	        fprintf(stderr,"ERROR: %s:%d: %s() recipe text overflow.\n",
 	  	      __FILE__,__LINE__,__FUNCTION__);
 	        return -1;
 	      }
-	      printf("####CURRENT RECIPENODE RECIPETEXT: %s \n",curr_r->recipetext);
+	      //printf("####CURRENT RECIPENODE RECIPETEXT: %s \n",curr_r->recipetext);
 	      if (appendto(curr_r->recipetext,&(curr_r->recipeLen),recipeMaxLen,"\n")) {
 	        fprintf(stderr,"ERROR: %s:%d: %s() recipe text overflow.\n",
 	  	      __FILE__,__LINE__,__FUNCTION__);
@@ -684,6 +729,7 @@ subform_node* create_list_subforms(const char *formversion)
     }
 
     strcpy(subformnode->subformid,formversion);
+    //subformnode->nodeset = "";
     head_s = curr_s = subformnode;
     return subformnode;
 }
@@ -775,6 +821,7 @@ subform_node* add_to_list_subforms(const char *formversion)
         return NULL;
     }
     strcpy(subformnode->subformid,formversion);
+    //subformnode->nodeset = "";
     subformnode->next = NULL;
 
     	//double linked list so we can move forward when we meet a new subform

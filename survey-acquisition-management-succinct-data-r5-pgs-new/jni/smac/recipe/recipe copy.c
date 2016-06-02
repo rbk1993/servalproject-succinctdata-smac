@@ -993,9 +993,9 @@ int recipe_decompress(stats_handle *h, char *recipe_dir,
   for(field=0;field<recipe->field_count;field++)
     {
       int field_present=range_decode_equiprobable(c,2);
-      printf("%sdecompressing value for '%s' of type '%d'\n",
+      printf("%sdecompressing value for '%s'\n",
 	     field_present?"":"not ",
-	     recipe->fields[field].name,recipe->fields[field].type);
+	     recipe->fields[field].name);
       if (field_present) {
 	char value[1024];
 	int r=recipe_decode_field(recipe,h,c,field,value,1024);
@@ -1186,6 +1186,42 @@ int recipe_compress_file(stats_handle *h,char *recipe_dir,char *input_file,char 
     snprintf(recipe_error,1024,"Could not memory map uncompressed file '%s'\n",input_file);
     close(fd); return -1; 
   }
+
+//  int state_in_subform_instance = 0;
+//  int state_in_subform_record = 0;
+//  //Read stripped file and create 1 buffer for each form
+//
+//  for(i=0;i<stat.st_size;i++) {
+//
+//	  if(stripped[i]=='{') { //Found an opening bracket
+//
+//    	printf("Found opening bracket ! \n");
+//
+//    	//{Opening bracket} X {We are not already in a subform} => beginning of subform
+//    	if (state_in_subform_instance ==0) {
+//    		state_in_subform_instance=1;
+//    	}
+//    	//{Opening bracket} X {We are already in a subform} => beginning of subform record
+//    	else {
+//    		state_in_subform_record=1;
+//    	}
+//    } else if(stripped[i]=='}') { //Found a closing bracket
+//
+//    printf("Found closing bracket ! \n");
+//
+//        //{Closing bracket} X {We are already in a subform record} => end of subform record
+//		if (state_in_subform_record==1) {
+//			state_in_subform_record=0;
+//		}
+//		//{Closing bracket} X {We are not already in a subform record} => end of subform
+//		else {
+//			state_in_subform_instance=0;
+//		}
+//    } else {
+//
+//
+//
+//    }
 
   // Parse formid from stripped file so that we know which recipe to use
   char formid[1024]="";
