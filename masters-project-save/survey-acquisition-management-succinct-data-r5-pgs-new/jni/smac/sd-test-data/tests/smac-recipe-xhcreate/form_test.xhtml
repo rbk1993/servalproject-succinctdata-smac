@@ -1,28 +1,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-     xmlns:dd="http://datadyne.org/javarosa"
-     xmlns:jr="http://openrosa.org/javarosa"
-     xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<head>
-		<meta>
-               		<userid/>
-           		<deviceid/>
-               		<timestartrecorded/>
-               		<timeendrecorded/>
-          	</meta>
-          	<title>form_test</title>
-          	<xf:model dd:formid="9990001" dd:geotag="on" id="subform_test_01">
-                	<xf:instance>
-                    		<data>
-					<Type_your_name/>
-				</data>
-			</xf:instance>
-			<bind id="Type_your_name" nodeset="/data/Type_your_name" required="true()" type="xsd:string"/>
-		</xf:model>
-	</head>
-	<body>
-		<xf:input bind="Type_your_name">
-                        <xf:label>Type your name</xf:label>
-                        <hint/>
-                </xf:input>
-	</body>
+xmlns:dd="http://datadyne.org/javarosa" (...)>
+  <head>
+    <meta>
+      <userid/>
+      <timestartrecorded/>
+      </meta>
+    <title>form_test</title>
+    <xf:model dd:formid="9990001" dd:geotag="off" id="subform_test_01">
+      <xf:instance>
+      <data>
+        <Type_your_name/>
+        </data>
+      </xf:instance>
+      <bind id="Type_your_name" nodeset="/data/Type_your_name" type="xsd:string"/>
+    </xf:model>
+  </head>
+  <body>
+    <xf:input bind="Type_your_name">
+      <xf:label>Type your name</xf:label>
+      <hint/>
+    </xf:input>
+  </body>
 </html>
