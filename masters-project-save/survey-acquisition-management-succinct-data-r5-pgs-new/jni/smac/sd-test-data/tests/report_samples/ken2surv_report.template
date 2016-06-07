@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<meta>
+<userid>$userid$</userid>
+<accesstoken>$accesstoken$</accesstoken>
+<formid>$formid$</formid>
+<lastsubmittime>$lastsubmittime$</lastsubmittime>
+<endrecordtime>$endrecordtime$</endrecordtime>
+<startrecordtime>$startrecordtime$</startrecordtime>
+<version>$version$</version>
+<uuid>$uuid$</uuid>
+<geotag>
+  <longitude>$longitude$</longitude>
+  <latitude>$latitude$</latitude>
+</geotag>
+</meta>
+<data>
+<KENYA_MANAGEMENT_SURVEY_JANUA>$KENYA_MANAGEMENT_SURVEY_JANUA$</KENYA_MANAGEMENT_SURVEY_JANUA>
+<interviewer>$interviewer$</interviewer>
+<clusterid>$clusterid$</clusterid>
+<hhid>$hhid$</hhid>
+<gps>$gps$</gps>
+<hhinterviewed_yn>$hhinterviewed_yn$</hhinterviewed_yn>
+<consent>$consent$</consent>
+<interview_start_time>$interview_start_time$</interview_start_time>
+<name_hhhead>$name_hhhead$</name_hhhead>
+<head_hh_school_yn>$head_hh_school_yn$</head_hh_school_yn>
+<head_hh_educ_highest>$head_hh_educ_highest$</head_hh_educ_highest>
+<num_km_to_facility>$num_km_to_facility$</num_km_to_facility>
+</data>
+</form>

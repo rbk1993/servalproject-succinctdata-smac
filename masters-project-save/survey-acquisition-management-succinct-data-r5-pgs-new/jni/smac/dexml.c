@@ -285,7 +285,7 @@ int xml2stripped(const char *form_name, const char *xml,int xml_len,
       }
       interesting_tag=0; 
       break;
-    case '>': 
+    case '>':
       if (taglen) {
 	// got a tag name	
 	tag[taglen]=0;

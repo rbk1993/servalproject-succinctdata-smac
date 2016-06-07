@@ -1,0 +1,21 @@
+userid:string:0:0:0
+accesstoken:string:0:0:0
+formid:string:0:0:0
+lastsubmittime:magpitimestamp:0:0:0
+endrecordtime:magpitimestamp:0:0:0
+startrecordtime:magpitimestamp:0:0:0
+version:string:0:0:0
+uuid:magpiuuid:0:0:0
+latitude:float:-90:90:0
+longitude:float:-200:200:0
+interviewer:string:0:0:0
+clusterid:integer:1:30:0
+hhid:integer:1:15:0
+gps:geopoint:0:0:0
+interview_start_time:integer:0:2400:0
+name_hhhead:string:0:0:0
+num_km_to_facility:integer:0:999:0
+hhinterviewed_yn:enum:0:0:0:yes,no
+consent:enum:0:0:0:yes,no
+head_hh_school_yn:enum:0:0:0:yes,no,do not know
+head_hh_educ_highest:enum:0:0:0:Primary,Secondary,Higher,Do not know

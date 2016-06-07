@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:dd="http://datadyne.org/javarosa"
+     xmlns:jr="http://openrosa.org/javarosa"
+     xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+     <head>
+          <meta>
+               <userid/>
+               <deviceid/>
+               <timestartrecorded/>
+               <timeendrecorded/>
+          </meta>
+          <title>1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05</title>
+          <xf:model dd:formid="27251" dd:geotag="on" id="1_KEN2surv_house_v15_Copy_2013_01_30_18_58_05">
+               <xf:instance>
+                    <data>
+                         <interviewer/>
+                         <clusterid/>
+                         <hhid/>
+                         <gps/>
+                         <hhinterviewed_yn/>
+                         <consent/>
+                         <interview_start_time/>
+                         <name_hhhead/>
+                         <head_hh_school_yn/>
+                         <head_hh_educ_highest/>
+                         <num_km_to_facility/>
+                    </data>
+               </xf:instance>
+               <bind id="interviewer" nodeset="/data/interviewer"
+                    required="true()" type="xsd:string"/>
+               <bind
+                    constraint="not(   /data/clusterid  &lt;  1   or   /data/clusterid  >  30    )"
+                    id="clusterid"
+                    jr:constraintMsg="Your answer must be between 1 and 30"
+                    nodeset="/data/clusterid" required="true()" type="xsd:integer"/>  
+
+		(...)
+
+	</xf:model>
+     </head>
+     <body>
+          <xf:input bind="interviewer">
+               <xf:label>Interviewer name</xf:label>
+               <hint/>
+          </xf:input>
+          <xf:input bind="clusterid">
+               <xf:label>Cluster number.  REMEMBER TO CHANGE THE CLUSTER NUMBER AT THE BEGINNING OF EACH DAY.  THIS VARIABLE IS SET TO 'AUTOFILL' OR REPEAT THE PREVIOUS VARIABLE RESPONSE.</xf:label>
+               <hint/>
+          </xf:input>
+
+	  (...)
+
+     </body>
+</html>
