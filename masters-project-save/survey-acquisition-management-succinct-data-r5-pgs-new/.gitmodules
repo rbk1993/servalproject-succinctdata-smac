@@ -1,3 +1,0 @@
-[submodule "jni/smac"]
-	path = jni/smac
-	url = git@github.com:servalproject/smac.git
