@@ -9,5 +9,5 @@ uuid:magpiuuid:0:0:0
 latitude:float:-90:90:0
 longitude:float:-200:200:0
 What_is_your_favorite_number:integer:0:999:0
-subform_9214104912:subform:0:0:0
+subform/9214104912:subform:0:0:0
 Type_something:string:0:0:0

@@ -155,7 +155,7 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
 
 			 printf("Found a data tag within a subform ! \n");
 			 state_in_subform_record=1;
-			 remaining_records = 1;
+			 remaining_records = 0;
 			 //Store the position of the record beginning for further records
 			 beginning_index_of_subform_record=i-strlen("data")-3;
 
@@ -167,6 +167,8 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
 			 printf("Found a data END tag within a subform ! \n");
 		  	 if(remaining_records == 1) {
 				 number_of_records_written++;
+				 //set remaining_records to 0, it will be set to 1 if we have another record
+				 remaining_records = 0;
 		  		 //Go back in the template file to the beginning of a record
 		  		 i=beginning_index_of_subform_record;
 		  	 } else {
@@ -188,10 +190,13 @@ int stripped2xml(char *stripped,int stripped_len,char *template,int template_len
 	      xml[xml_ofs++]=values[j][k];
 	      if (xml_ofs==xml_size) return -1;
 	    }
+	    //If we find a record, we check if we have more records
+	    //Sometimes, there are even no records in the subform
+	    //So in this case remaning records will stay 0 et we will go on.
 		if(in_subform_record[j] == 1){
-			//If we have written the total number of records, no more records to write.
-			if((record_count[record_number_field[j]] - number_of_records_written) == 1) {
-				remaining_records = 0;
+			//If we have written the total number of records (i.e. count - written == 1) we dont set remaining records to 0
+			if((record_count[record_number_field[j]] - number_of_records_written) > 1) {
+				remaining_records = 1;
 			}
 		}
 		//Empty the fieldname because we already wrote it in the XML
